@@ -1,0 +1,2132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmaceutical Jurisprudence (BP 505T) — Comprehensive PYQ Analysis & Exam Predictor</title>
+<style>
+  :root {
+    --bg-body: #f8fafc;
+    --bg-surface: #ffffff;
+    --bg-sidebar: #0f172a;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --text-sidebar: #e2e8f0;
+    --border-color: #e2e8f0;
+    --primary: #1d4ed8;
+    --primary-light: #eff6ff;
+    --red-bg: #fef2f2;
+    --red-border: #ef4444;
+    --red-text: #b91c1c;
+    --orange-bg: #fff7ed;
+    --orange-border: #f97316;
+    --orange-text: #c2410c;
+    --blue-bg: #eff6ff;
+    --blue-border: #3b82f6;
+    --blue-text: #1d4ed8;
+    --green-bg: #f0fdf4;
+    --green-border: #22c55e;
+    --green-text: #15803d;
+    --gray-bg: #f1f5f9;
+    --gray-text: #475569;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.6;
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 280px;
+    background-color: var(--bg-sidebar);
+    color: var(--text-sidebar);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow-y: auto;
+    padding: 1.5rem 1rem;
+    z-index: 100;
+  }
+
+  .sidebar-header {
+    border-bottom: 1px solid #334155;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sidebar-header h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+  }
+
+  .sidebar-header p {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-top: 0.25rem;
+  }
+
+  .nav-list {
+    list-style: none;
+  }
+
+  .nav-list li {
+    margin-bottom: 0.35rem;
+  }
+
+  .nav-list a {
+    display: block;
+    padding: 0.55rem 0.75rem;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.88rem;
+    border-radius: 6px;
+    transition: background-color 0.15s, color 0.15s;
+  }
+
+  .nav-list a:hover, .nav-list a.active {
+    background-color: #1e293b;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  /* Main Content */
+  .main-content {
+    margin-left: 280px;
+    flex: 1;
+    padding: 2rem 2.5rem;
+    max-width: 1200px;
+  }
+
+  .header-banner {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-left: 5px solid var(--primary);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.75rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+
+  .header-banner h1 {
+    font-size: 1.65rem;
+    color: #0f172a;
+    margin-bottom: 0.4rem;
+  }
+
+  .meta-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .pill {
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    background-color: var(--gray-bg);
+    color: var(--gray-text);
+    border: 1px solid #cbd5e1;
+  }
+
+  .pill-primary {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border-color: #bfdbfe;
+  }
+
+  /* Controls Bar */
+  .controls-bar {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    position: sticky;
+    top: 0.75rem;
+    z-index: 50;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+
+  .search-input {
+    flex: 1;
+    min-width: 220px;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+  }
+
+  .filter-select {
+    padding: 0.55rem 0.75rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    background-color: #ffffff;
+    color: var(--text-main);
+  }
+
+  .btn {
+    padding: 0.55rem 0.9rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background-color: #f8fafc;
+    color: var(--text-main);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #e2e8f0;
+  }
+
+  /* Sections */
+  section {
+    margin-bottom: 2.75rem;
+    scroll-margin-top: 5.5rem;
+  }
+
+  .section-title {
+    font-size: 1.35rem;
+    color: #0f172a;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  }
+
+  .alert-box {
+    background-color: #fffbeb;
+    border: 1px solid #fde68a;
+    border-left: 4px solid #d97706;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+    font-size: 0.92rem;
+  }
+
+  /* Badges */
+  .badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    margin-right: 0.35rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .badge-high {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    border: 1px solid var(--red-border);
+  }
+
+  .badge-important {
+    background-color: var(--orange-bg);
+    color: var(--orange-text);
+    border: 1px solid var(--orange-border);
+  }
+
+  .badge-backup {
+    background-color: var(--gray-bg);
+    color: var(--gray-text);
+    border: 1px solid #cbd5e1;
+  }
+
+  .badge-repeated {
+    background-color: var(--blue-bg);
+    color: var(--blue-text);
+    border: 1px solid var(--blue-border);
+  }
+
+  .badge-evidence {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+    border: 1px solid #d8b4fe;
+  }
+
+  /* QA Cards */
+  .qa-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+  }
+
+  .qa-card.priority-high {
+    border-left: 4px solid var(--red-border);
+  }
+
+  .qa-card.priority-important {
+    border-left: 4px solid var(--orange-border);
+  }
+
+  .qa-card.priority-backup {
+    border-left: 4px solid #94a3b8;
+  }
+
+  .qa-header {
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #ffffff;
+  }
+
+  .qa-header:hover {
+    background-color: #f8fafc;
+  }
+
+  .qa-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0f172a;
+    margin-top: 0.35rem;
+  }
+
+  .qa-meta {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: 0.35rem;
+  }
+
+  .toggle-icon {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    white-space: nowrap;
+    padding: 0.25rem 0.5rem;
+    background: var(--primary-light);
+    border-radius: 4px;
+  }
+
+  .qa-body {
+    display: none;
+    padding: 1.25rem 1.5rem;
+    background-color: var(--green-bg);
+    border-top: 1px solid #bbf7d0;
+    color: #14532d;
+  }
+
+  .qa-card.open .qa-body {
+    display: block;
+  }
+
+  .answer-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #15803d;
+    color: #ffffff;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+  }
+
+  .qa-body h4 {
+    color: #064e3b;
+    margin-top: 0.85rem;
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+  }
+
+  .qa-body p, .qa-body ul, .qa-body ol {
+    color: #1e293b;
+    font-size: 0.92rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .qa-body ul, .qa-body ol {
+    padding-left: 1.35rem;
+  }
+
+  .qa-body li {
+    margin-bottom: 0.3rem;
+  }
+
+  /* Tables */
+  .table-wrap {
+    overflow-x: auto;
+    margin-bottom: 1rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    background-color: #ffffff;
+  }
+
+  th, td {
+    border: 1px solid var(--border-color);
+    padding: 0.65rem 0.85rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: #f1f5f9;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+  /* Grid for Revision */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+  }
+
+  .rev-card {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.1rem 1.25rem;
+  }
+
+  .rev-card h3 {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.35rem;
+  }
+
+  .rev-card ul {
+    padding-left: 1.2rem;
+    font-size: 0.88rem;
+  }
+
+  .rev-card li {
+    margin-bottom: 0.4rem;
+  }
+
+  /* Exam Paper Box */
+  .exam-paper {
+    background: #ffffff;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .exam-header {
+    text-align: center;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .exam-header h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  }
+
+  .exam-meta-row {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+  }
+
+  .exam-part {
+    margin-top: 1.5rem;
+  }
+
+  .exam-part-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    background: #f1f5f9;
+    padding: 0.45rem 0.75rem;
+    border-left: 4px solid #0f172a;
+    margin-bottom: 0.75rem;
+  }
+
+  .exam-q {
+    margin-bottom: 0.65rem;
+    padding-left: 0.5rem;
+    font-size: 0.93rem;
+  }
+
+  .evidence-note {
+    display: block;
+    font-size: 0.78rem;
+    color: #475569;
+    font-style: italic;
+    margin-top: 0.15rem;
+  }
+
+  /* Mobile Menu Button */
+  .mobile-nav-toggle {
+    display: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    padding: 0.75rem 1.2rem;
+    font-weight: 700;
+    z-index: 200;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+
+  @media (max-width: 900px) {
+    .sidebar {
+      transform: translateX(-100%);
+      transition: transform 0.25s ease;
+    }
+    .sidebar.open {
+      transform: translateX(0);
+    }
+    .main-content {
+      margin-left: 0;
+      padding: 1.25rem;
+    }
+    .mobile-nav-toggle {
+      display: block;
+    }
+  }
+
+  @media print {
+    .sidebar, .controls-bar, .mobile-nav-toggle, .toggle-icon {
+      display: none !important;
+    }
+    .main-content {
+      margin-left: 0;
+      padding: 0;
+      max-width: 100%;
+    }
+    .qa-body {
+      display: block !important;
+      background-color: #ffffff !important;
+      border-top: 1px solid #cbd5e1;
+    }
+    .qa-card, .card, .exam-paper {
+      break-inside: avoid;
+      box-shadow: none;
+    }
+  }
+</style>
+</head>
+<body>
+
+<button class="mobile-nav-toggle" onclick="document.getElementById('sidebar').classList.toggle('open')">☰ Menu</button>
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <h1>BP 505T: Jurisprudence</h1>
+    <p>B.Pharm V Sem • PYQ Analytics & Exam Guide</p>
+  </div>
+  <ul class="nav-list">
+    <li><a href="#overview">1. Paper Pattern & Corpus Summary</a></li>
+    <li><a href="#limitations">2. Source Corpus & Limitations</a></li>
+    <li><a href="#revision">3. Last-Minute Revision Hub</a></li>
+    <li><a href="#repeated">4. Repeated Questions & Answers</a></li>
+    <li><a href="#high-priority">5. High-Priority Questions & Answers</a></li>
+    <li><a href="#important-backup">6. Important & Backup Questions</a></li>
+    <li><a href="#act-unit-analysis">7. Act-Wise & Unit-Wise Analysis</a></li>
+    <li><a href="#frequency-table">8. Multi-Paper Frequency Table</a></li>
+    <li><a href="#procedures-formulas">9. Procedures & DPCO Formulas</a></li>
+    <li><a href="#predicted-paper">10. Predicted 75-Mark Exam Paper</a></li>
+    <li><a href="#answer-key">11. Complete Predicted Answer Key</a></li>
+  </ul>
+</aside>
+
+<main class="main-content">
+
+  <!-- 1. TITLE AND PAPER-PATTERN SUMMARY -->
+  <section id="overview">
+    <div class="header-banner">
+      <h1>Pharmaceutical Jurisprudence [BP 505T] — PYQ Analysis & Exam Predictor</h1>
+      <p>Evidence-based multi-year analysis of GITAM (Deemed to be University) B.Pharmacy V Semester Examination Papers</p>
+      <div class="meta-pills">
+        <span class="pill pill-primary">Programme: B.Pharm (V Semester)</span>
+        <span class="pill pill-primary">Course Code: BP 505T</span>
+        <span class="pill">Duration: 3 Hours</span>
+        <span class="pill">Max Marks: 75</span>
+        <span class="pill">Pattern: Part A (10×2=20) | Part B (2×10=20) | Part C (7×5=35)</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Verified Examination Structure & Examiner Blueprint</h3>
+      <p style="margin-top:0.5rem; font-size:0.92rem;">Across all uploaded GITAM University question papers (<strong>Oct-19, April-21, April-22, Sep-22, Nov-22</strong>, plus supplementary sets coded <code>61/V S/121</code> and <code>61/V S/122</code>), the examination structure is 100% uniform:</p>
+      <div class="table-wrap" style="margin-top:0.75rem;">
+        <table>
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Question Type</th>
+              <th>Choice Pattern</th>
+              <th>Marks Breakdown</th>
+              <th>Examiner Focus</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Part A</strong></td>
+              <td>Very Short Answers / Definitions</td>
+              <td>Compulsory (Attempt all 10)</td>
+              <td>10 × 2 = <strong>20 Marks</strong></td>
+              <td>Statutory definitions, Schedules (F, G, H, M, N, X, Y), penalties, short roles (PCI, DTAB, DCC, IAEC, CPCSEA, NLEM).</td>
+            </tr>
+            <tr>
+              <td><strong>Part B</strong></td>
+              <td>Descriptive / Analytical Long Essays</td>
+              <td>Internal Choice (Attempt any 2 of 3)</td>
+              <td>2 × 10 = <strong>20 Marks</strong></td>
+              <td>Comprehensive Acts (D&C Act, Pharmacy Act, NDPS Act, DMR Act, M&TP Act, PCA Act), councils, and inspector duties.</td>
+            </tr>
+            <tr>
+              <td><strong>Part C</strong></td>
+              <td>Short Notes / Procedural Answers</td>
+              <td>Internal Choice (Attempt any 7 of 9)</td>
+              <td>7 × 5 = <strong>35 Marks</strong></td>
+              <td>Licensing procedures, labelling requirements, bonded/non-bonded labs, Code of Ethics, DTAB, DPCO, RTI, and IPR.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. SOURCE / SAMPLE-SIZE AND LIMITATIONS NOTE -->
+  <section id="limitations">
+    <h2 class="section-title">2. Source Corpus & Evidence Limitations</h2>
+    <div class="alert-box">
+      <strong>Corpus Audit Note:</strong> In addition to the <strong>Nov-22</strong> reference paper detailed in your prompt, 9 uploaded PYQ screenshots were verified and extracted:
+      <ul style="margin-top:0.4rem; margin-left:1.25rem;">
+        <li><strong>[Oct-19]</strong> (Page 1/2: Part A & Part B visible)</li>
+        <li><strong>[April-21] Supplementary</strong> (Complete: Part A, Part B, Part C — Paper Code <code>[61/V S/120]</code>)</li>
+        <li><strong>[April-22] Supplementary</strong> (Page 1/2: Part A & Part B visible)</li>
+        <li><strong>[Sep-22]</strong> (Page 1/2: Part A & Part B visible)</li>
+        <li><strong>[Nov-22]</strong> (Complete: Part A, Part B, Part C — Paper Code <code>[61/V S/122]</code>)</li>
+        <li><strong>Additional Uploaded Sets (Date header cropped, Paper Codes <code>[61/V S/121]</code> & <code>[61/V S/122]</code>):</strong> 4 screenshots covering full Part A/B/C sets from the same GITAM BP 505T examination series (batches 2017–18 / 2018–19).</li>
+      </ul>
+      <p style="margin-top:0.5rem;"><strong>Limitations & Statutory Accuracy Note:</strong> (1) Official university unit-by-unit syllabus PDF and class notes were not uploaded separately; therefore, unit mappings follow the standard <strong>PCI B.Pharm V Semester (BP 505T) Syllabus</strong> (explicitly flagged where applicable). (2) Several GITAM papers print "Drugs and Magic Remedies Act <strong>1984</strong>" due to a recurring university typographic error—the legally accurate enactment year is <strong>1954</strong> (always write 1954 in exams). (3) Where exact DPCO calculation formulas or specific statutory subsections are referenced, standard Indian pharmaceutical legislation provisions are provided under clearly marked legal verification notes.</p>
+    </div>
+  </section>
+
+  <!-- CONTROLS BAR FOR FILTERING QA CARDS -->
+  <div class="controls-bar">
+    <input type="text" id="searchInput" class="search-input" placeholder="Search questions, Acts, Schedules, definitions (e.g., Schedule X, NDPS, PCI, DPCO)...">
+    <select id="partFilter" class="filter-select">
+      <option value="all">All Parts (2M, 5M, 10M)</option>
+      <option value="Part A">Part A (2 Marks)</option>
+      <option value="Part B">Part B (10 Marks)</option>
+      <option value="Part C">Part C (5 Marks)</option>
+    </select>
+    <select id="actFilter" class="filter-select">
+      <option value="all">All Acts & Topics</option>
+      <option value="Drugs & Cosmetics Act">Drugs & Cosmetics Act, 1940</option>
+      <option value="Pharmacy Act">Pharmacy Act, 1948</option>
+      <option value="NDPS Act">NDPS Act, 1985</option>
+      <option value="DMR Act">Drugs & Magic Remedies Act, 1954</option>
+      <option value="MTP Act">Medicinal & Toilet Prep. Act, 1955</option>
+      <option value="PCA Act">Prevention of Cruelty to Animals, 1960</option>
+      <option value="DPCO">DPCO & NLEM</option>
+      <option value="Ethics & History">Ethics, History, RTI, IPR, Med. Termination</option>
+    </select>
+    <select id="priorityFilter" class="filter-select">
+      <option value="all">All Priorities</option>
+      <option value="high">High Priority (Repeated)</option>
+      <option value="important">Important</option>
+      <option value="backup">Backup</option>
+    </select>
+    <button class="btn" onclick="toggleAllAnswers(true)">Expand All</button>
+    <button class="btn" onclick="toggleAllAnswers(false)">Collapse All</button>
+  </div>
+
+  <!-- 3. LAST-MINUTE REVISION -->
+  <section id="revision">
+    <h2 class="section-title">3. Last-Minute Rapid Revision Hub</h2>
+    <div class="grid-2">
+      <div class="rev-card">
+        <h3>Key Acts & Enactment Years</h3>
+        <ul>
+          <li><strong>Poisons Act:</strong> 1919</li>
+          <li><strong>Drugs and Cosmetics Act:</strong> 1940 (Rules: 1945)</li>
+          <li><strong>Pharmacy Act:</strong> 1948</li>
+          <li><strong>Drugs and Magic Remedies (Objectionable Advertisements) Act:</strong> 1954 (Rules: 1955)</li>
+          <li><strong>Medicinal and Toilet Preparations (Excise Duties) Act:</strong> 1955 (Rules: 1956)</li>
+          <li><strong>Prevention of Cruelty to Animals Act:</strong> 1960</li>
+          <li><strong>Patents Act:</strong> 1970</li>
+          <li><strong>Medical Termination of Pregnancy (MTP) Act:</strong> 1971</li>
+          <li><strong>Narcotic Drugs and Psychotropic Substances (NDPS) Act:</strong> 1985</li>
+          <li><strong>Right to Information (RTI) Act:</strong> 2005</li>
+          <li><strong>Drugs (Prices Control) Order (DPCO):</strong> 2013 (under Essential Commodities Act, 1955)</li>
+        </ul>
+      </div>
+
+      <div class="rev-card">
+        <h3>High-Yield Schedules (D&C Rules, 1945)</h3>
+        <ul>
+          <li><strong>Schedule C & C1:</strong> Biological and special products (sera, vaccines, parenterals).</li>
+          <li><strong>Schedule F & F1:</strong> Standards for blood banks, vaccines, sera, and diagnostic antigens.</li>
+          <li><strong>Schedule G:</strong> Drugs to be taken under medical supervision (label: <em>"Caution: It is dangerous to take this preparation except under medical supervision"</em>).</li>
+          <li><strong>Schedule H:</strong> Prescription drugs (Symbol <strong>Rx</strong>; sold only against a Registered Medical Practitioner's prescription).</li>
+          <li><strong>Schedule M:</strong> Good Manufacturing Practices (GMP) and requirements of premises, plant, and equipment for pharmaceuticals.</li>
+          <li><strong>Schedule N:</strong> List of minimum equipment for efficient running of a pharmacy.</li>
+          <li><strong>Schedule P:</strong> Life period (shelf life) and storage conditions of drugs.</li>
+          <li><strong>Schedule X:</strong> Habit-forming / psychotropic & narcotic drugs (Symbol <strong>NRx</strong>; duplicate prescription preserved for 2 years).</li>
+          <li><strong>Schedule Y:</strong> Requirements and guidelines for clinical trials, import, and manufacture of new drugs.</li>
+        </ul>
+      </div>
+
+      <div class="rev-card">
+        <h3>Must-Memorize Statutory Definitions</h3>
+        <ul>
+          <li><strong>Spurious Drug (Sec 17B, D&C Act):</strong> Imported/manufactured under a name belonging to another drug, is an imitation/substitute, bears fictitious manufacturer name, or purports to be a product of a manufacturer of whom it is not truly a product.</li>
+          <li><strong>Adulterated Drug (Sec 17A):</strong> Consists in whole or part of filthy, putrid, or decomposed substance; prepared/packed under insanitary conditions; container composed of poisonous/deleterious substance.</li>
+          <li><strong>Misbranded Drug (Sec 17):</strong> So coloured, coated, powdered, or polished that damage is concealed; not labelled in prescribed manner; label bears false or misleading statement.</li>
+          <li><strong>Magic Remedy (Sec 2(c), DMR Act):</strong> Includes a talisman, mantra, kavacha, and any other charm of any kind alleged to possess miraculous powers for diagnosis, cure, mitigation, treatment, or prevention of disease in human beings or animals.</li>
+          <li><strong>Registered Pharmacist (Sec 2(i), Pharmacy Act):</strong> A person whose name is for the time being entered in the register of the State in which he is for the time being residing or carrying on his profession or business of pharmacy.</li>
+          <li><strong>Loan Licence (Rule 69A/75A):</strong> A licence granted to a person who does not have his own manufacturing arrangements but intends to avail himself of the manufacturing facilities owned by another licensee.</li>
+          <li><strong>Repacking Licence (Rule 69B):</strong> A licence granted for the process of breaking up any drug from a bulk container into small packages and labelling each package with a view to its sale and distribution (excluding Schedule C & C1).</li>
+        </ul>
+      </div>
+
+      <div class="rev-card">
+        <h3>Top 15 Exam Topics Ranked by Evidence</h3>
+        <ol>
+          <li><strong>Pharmacy Council of India (PCI) & State/Joint Councils</strong> (Constitution & Functions — <em>Appeared in 6+ sets</em>)</li>
+          <li><strong>Medicinal & Toilet Preparations Act, 1955</strong> (Bonded vs. Non-Bonded Lab manufacture — <em>Appeared in 4+ sets</em>)</li>
+          <li><strong>CPCSEA & IAEC Guidelines</strong> (Animal experimentation & breeding — <em>Appeared in 5+ sets</em>)</li>
+          <li><strong>Drugs & Magic Remedies Act, 1954</strong> (Magic remedy, prohibited & exempted ads — <em>Appeared in 5+ sets</em>)</li>
+          <li><strong>Drug Inspector</strong> (Qualifications, duties, powers & inspection procedure — <em>Appeared in 4+ sets</em>)</li>
+          <li><strong>Schedule M (GMP) & Schedule X</strong> (Manufacture licence conditions & penalties — <em>Appeared in 4+ sets</em>)</li>
+          <li><strong>NDPS Act, 1985</strong> (Narcotic vs. Psychotropic, Opium/Coca derivatives, Consultative Committee — <em>Appeared in 5+ sets</em>)</li>
+          <li><strong>Code of Pharmaceutical Ethics & Pharmacist Oath</strong> (<em>Appeared in 4+ sets</em>)</li>
+          <li><strong>Retail & Wholesale Drug Licensing</strong> (Conditions & differences — <em>Appeared in 3+ sets</em>)</li>
+          <li><strong>General & Specimen Labelling Requirements</strong> (Ophthalmic, Parenteral, Cosmetics — <em>Appeared in 4+ sets</em>)</li>
+          <li><strong>DTAB & Drugs Consultative Committee (DCC)</strong> (Constitution & functions — <em>Appeared in 3+ sets</em>)</li>
+          <li><strong>DPCO & NLEM</strong> (Objectives, retail/ceiling price, formulation price calculation — <em>Appeared in 3+ sets</em>)</li>
+          <li><strong>Spurious, Adulterated & Misbranded Drugs</strong> (Definitions & offences — <em>Appeared in 3+ sets</em>)</li>
+          <li><strong>Loan Licence & Repacking Licence</strong> (Definitions & conditions — <em>Appeared in 4+ sets</em>)</li>
+          <li><strong>Right to Information (RTI) Act & IPR/Patents</strong> (<em>Appeared in 4+ sets</em>)</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. REPEATED QUESTIONS WITH DETAILED ANSWERS -->
+  <section id="repeated">
+    <h2 class="section-title">4. Repeated Questions Across PYQs (Combined Entries & Model Answers)</h2>
+
+    <!-- RQ 1 -->
+    <div class="qa-card priority-high" data-part="Part B Part C Part A" data-act="Pharmacy Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Direct & Conceptual Repeat (6 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Oct-19, Apr-21, Apr-22, Sep-22, Nov-22, 61/V S/121 & 122</span>
+          <div class="qa-title">Q1. State the objectives of the Pharmacy Act, 1948. Explain the constitution and functions of the Pharmacy Council of India (PCI / Central Council) and State/Joint State Pharmacy Councils.</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> "Write the constitution and functions of PCI and DTAB" (Sep-22, 10M) • "Write the objectives of Pharmacy Act 1948 and elaborate the Constitution and functions of PCI" (Apr-22, 10M) • "Define PCI. Explain its constitution, regulations and functions" (Apr-21, 10M) • "Write the constitution and functions of State and Joint State Pharmacy council" (Nov-22, 10M) • "Write the objective of Pharmacy Act, 1948 and discuss the constitution of Central Council of Pharmacy" (Nov-22, 5M). | <strong>PCI Syllabus: Unit III</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 10-Mark Exam Answer</span>
+        <h4>1. Introduction & Objectives of the Pharmacy Act, 1948</h4>
+        <p>The Pharmacy Act, 1948 was enacted to regulate the profession and practice of pharmacy in India. Its primary objectives are:</p>
+        <ul>
+          <li>To raise the status of the profession of pharmacy in India by establishing uniform educational standards.</li>
+          <li>To constitute the <strong>Pharmacy Council of India (PCI)</strong> at the central level to regulate pharmacy education (Education Regulations).</li>
+          <li>To constitute <strong>State Pharmacy Councils</strong> (and Joint State Pharmacy Councils) for the registration of pharmacists and regulation of professional conduct.</li>
+          <li>To restrict the compounding, preparing, mixing, or dispensing of medicines on prescriptions solely to <strong>Registered Pharmacists</strong>.</li>
+        </ul>
+
+        <h4>2. Constitution of Pharmacy Council of India (PCI / Central Council — Section 3)</h4>
+        <p>The Central Government constitutes the PCI every <strong>5 years</strong>, consisting of three categories of members:</p>
+        <ul>
+          <li><strong>A. Elected Members:</strong>
+            <ul>
+              <li><strong>6 members</strong> elected by the University Grants Commission (UGC) from among teachers of pharmacy, pharmaceutical chemistry, pharmacology, and pharmacognosy on the teaching staff of an Indian university or affiliated college (at least one teacher from each of the four subjects).</li>
+              <li><strong>1 member</strong> elected by the Medical Council of India (now National Medical Commission) from among its members.</li>
+              <li><strong>1 member</strong> elected by each State Pharmacy Council, who shall be a Registered Pharmacist.</li>
+            </ul>
+          </li>
+          <li><strong>B. Nominated Members:</strong>
+            <ul>
+              <li><strong>6 members</strong> nominated by the Central Government, of whom at least <strong>4</strong> must possess a degree or diploma in pharmacy or pharmaceutical chemistry or be registered pharmacists.</li>
+              <li><strong>1 representative</strong> each from the University Grants Commission (UGC) and the All India Council for Technical Education (AICTE).</li>
+              <li><strong>1 member</strong> nominated by each State Government/Union Territory administration, who shall be a Registered Pharmacist.</li>
+            </ul>
+          </li>
+          <li><strong>C. Ex-Officio Members:</strong>
+            <ul>
+              <li>The Director General of Health Services (DGHS).</li>
+              <li>The Drugs Controller General of India (DCGI).</li>
+              <li>The Director of the Central Drugs Laboratory (CDL), Kolkata.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>3. Functions of the Pharmacy Council of India (PCI)</h4>
+        <ul>
+          <li><strong>Framing Education Regulations (Section 10):</strong> Prescribing the minimum standard of education required for qualification as a pharmacist (nature and period of study, practical training, equipment, and examination standards).</li>
+          <li><strong>Approval of Institutions & Examinations (Section 12):</strong> Inspecting pharmacy institutions through PCI Inspectors and granting or withdrawing approval of courses of study and examinations.</li>
+          <li><strong>Approval of Foreign Qualifications (Section 14):</strong> Recognizing pharmacy qualifications granted outside India for registration purposes.</li>
+          <li><strong>Maintenance of Central Register (Section 15A):</strong> Maintaining the Central Register of Pharmacists containing names of all persons entered in State Registers.</li>
+        </ul>
+
+        <h4>4. Constitution & Functions of State Pharmacy Council (Section 19) & Joint State Pharmacy Council (Section 20)</h4>
+        <ul>
+          <li><strong>State Pharmacy Council Constitution:</strong>
+            <ul>
+              <li><em>Elected:</em> 6 members elected from amongst themselves by Registered Pharmacists of the State; 1 member elected by the State Medical Council.</li>
+              <li><em>Nominated:</em> 5 members nominated by the State Government (at least 3 possessing a degree/diploma in pharmacy or registered pharmacists).</li>
+              <li><em>Ex-Officio:</em> Chief Administrative Medical Officer of the State; Officer-in-charge of Drugs Control Administration of the State; Government Analyst under D&C Act, 1940.</li>
+            </ul>
+          </li>
+          <li><strong>Joint State Pharmacy Council (Section 20):</strong> Two or more State Governments may enter into an agreement (for a specified period) to constitute a Joint State Pharmacy Council with elected (3–5 pharmacists per State; 1 per State Medical Council), nominated (2–4 per State Government), and ex-officio members from each participating State.</li>
+          <li><strong>Key Functions:</strong> Preparation and maintenance of the State Register of Pharmacists, renewal of registration, removal of names for professional misconduct/conviction, and enforcement of the Pharmacy Act within the State.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RQ 2 -->
+    <div class="qa-card priority-high" data-part="Part B Part C" data-act="MTP Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Direct Repeat (4 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Sep-22 (10M), Apr-22 (10M), Nov-22 (5M), 61/V S/122 (10M), Apr-21 (5M)</span>
+          <div class="qa-title">Q2. Write the objectives of the Medicinal and Toilet Preparations (Excise Duties) Act, 1955. Elaborate the procedure for manufacture of alcoholic preparations in Bonded and Non-Bonded laboratories.</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> Verbatim repeat in Sep-22 (Part B, 10M), Apr-22 (Part B, 10M), 61/V S/122 (Part B, 10M), and Nov-22 (Part C, 5M). | <strong>PCI Syllabus: Unit IV</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 10-Mark Exam Answer</span>
+        <h4>1. Objectives of the Medicinal and Toilet Preparations (Excise Duties) Act, 1955</h4>
+        <ul>
+          <li>To provide for the levy and collection of uniform <strong>duties of excise</strong> on medicinal and toilet preparations containing alcohol, opium, Indian hemp, or other narcotic drugs/narcotics throughout India.</li>
+          <li>To eliminate inter-state smuggling and disparity in excise duty rates across different Indian states.</li>
+          <li>To regulate the manufacture, storage, warehousing, and movement of alcohol-containing formulations to prevent misuse of rectified spirit for potable (beverage) purposes.</li>
+        </ul>
+
+        <h4>2. Manufacture in a Bonded Laboratory (Manufacture in Bond)</h4>
+        <p>A <strong>Bonded Manufactory</strong> is a licensed premises approved by the Excise Commissioner where spirit is received and stored <strong>without prior payment of excise duty</strong> (under bond), and duty is paid only when the finished preparations are cleared from the bond.</p>
+        <ul>
+          <li><strong>Premises & Security Requirements:</strong> Must have separate rooms for (a) rectified spirit store, (b) manufacturing room, (c) finished goods store, and (d) Excise Officer's office. All windows must have iron bars (not less than 19 mm thick, max 102 mm apart) with wire netting; only one entrance to the bonded laboratory and one door to each compartment, secured by <strong>excise ticket locks</strong>.</li>
+          <li><strong>Procurement of Rectified Spirit:</strong> Manufacturer applies to the Excise Officer in prescribed form; spirit is issued from a distillery/warehouse under bond without duty payment, accompanied by a transport permit.</li>
+          <li><strong>Verification & Storage:</strong> On arrival, the Excise Officer verifies volume and proof strength and stores the spirit in the Spirit Store under excise lock.</li>
+          <li><strong>Manufacturing Procedure:</strong> Manufacturer submits a requisition to the Excise Officer specifying quantity of spirit needed and formulation batch details. Spirit is issued to the manufacturing room, mixed immediately with other ingredients in the presence of the Excise Officer, and finished batches are transferred to the Finished Store.</li>
+          <li><strong>Clearance & Payment of Duty:</strong> Samples are tested by the Chemical Examiner for alcohol strength. Duty is paid before removal from the Finished Store (or goods are exported under bond without duty).</li>
+        </ul>
+
+        <h4>3. Manufacture in a Non-Bonded Laboratory (Manufacture Outside Bond)</h4>
+        <p>A <strong>Non-Bonded Manufactory</strong> is a licensed premises where rectified spirit is purchased <strong>only after paying full excise duty</strong> upfront.</p>
+        <ul>
+          <li><strong>Premises Requirements:</strong> Simpler layout than bonded labs; requires separate spirit store, laboratory, and finished store with barred windows and wire mesh, but is <strong>not locked by Excise Officers</strong>.</li>
+          <li><strong>Procurement of Spirit:</strong> Manufacturer pays excise duty in advance into the Government Treasury, submits the treasury challan to the Excise Officer, and obtains a permit to purchase duty-paid spirit from an approved distillery.</li>
+          <li><strong>Manufacturing & Record Keeping:</strong> Manufacturing is conducted during prescribed hours without continuous physical supervision of an Excise Officer, though the officer may inspect periodically and draw samples. Strict stock registers (Spirit Account, Manufacturing Register, Sales Register) must be maintained.</li>
+        </ul>
+
+        <h4>4. Key Comparison: Bonded vs. Non-Bonded Laboratory</h4>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Bonded Laboratory</th>
+                <th>Non-Bonded Laboratory</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Excise Duty Payment</strong></td>
+                <td>Paid <em>after</em> manufacture, at the time of clearance of finished goods.</td>
+                <td>Paid <em>in advance</em> before purchasing rectified spirit.</td>
+              </tr>
+              <tr>
+                <td><strong>Excise Supervision</strong></td>
+                <td>Continuous supervision by a posted Excise Officer; doors secured with excise locks.</td>
+                <td>Periodic inspection by Excise Officer; no excise locks on doors.</td>
+              </tr>
+              <tr>
+                <td><strong>Capital Requirement</strong></td>
+                <td>Lower working capital blocked in duty; higher infrastructure & security bond cost.</td>
+                <td>Higher working capital needed upfront for duty-paid spirit.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- RQ 3 -->
+    <div class="qa-card priority-high" data-part="Part B Part C" data-act="DMR Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Direct & Conceptual Repeat (5 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Sep-22 (10M), Nov-22 (5M), 61/V S/121 (10M), 61/V S/122 (5M), Apr-21 (5M), Oct-19 (2M)</span>
+          <div class="qa-title">Q3. What is a "Magic Remedy"? State the objectives of the Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954, and list the classes of prohibited and exempted advertisements.</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> Verbatim in Sep-22 (10M) & Nov-22 (5M) [Note: University papers print "1984" by mistake; correct year is 1954] • "Explain the salient features of drugs and magic remedies act" (61/V S/121, 10M). | <strong>PCI Syllabus: Unit IV</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5/10-Mark Exam Answer</span>
+        <p><em>(Statutory Note: Always write the correct year <strong>1954</strong> in your answer, even if the question paper prints 1984.)</em></p>
+        <h4>1. Definition of Magic Remedy (Section 2(c))</h4>
+        <p>A <strong>"Magic Remedy"</strong> includes a talisman, mantra, kavacha, and any other charm of any kind which is alleged to possess miraculous powers for or in the diagnosis, cure, mitigation, treatment, or prevention of any disease in human beings or animals, or for affecting or influencing in any way the structure or any organic function of the body of human beings or animals.</p>
+
+        <h4>2. Objectives of the Act</h4>
+        <ul>
+          <li>To control the advertisement of drugs in certain cases and protect the public from self-medication with harmful or ineffective drugs.</li>
+          <li>To prohibit advertisements of remedies alleged to possess magic qualities.</li>
+          <li>To prevent unethical exploitation of gullible patients suffering from incurable or chronic ailments.</li>
+        </ul>
+
+        <h4>3. Classes of Prohibited Advertisements (Sections 3, 4 & 5)</h4>
+        <ul>
+          <li><strong>Section 3 (Prohibition of advertisement of certain drugs for treatment of certain diseases):</strong> Prohibits advertisements referring to any drug in terms calculated to lead to its use for:
+            <ol>
+              <li>Procurement of miscarriage in women or prevention of conception in women.</li>
+              <li>Maintenance or improvement of the capacity of human beings for sexual pleasure.</li>
+              <li>Correction of menstrual disorders in women.</li>
+              <li>Diagnosis, cure, mitigation, treatment, or prevention of any disease/disorder specified in the <strong>Schedule</strong> (54 diseases including AIDS, cancer, diabetes, blindness, cataract, leprosy, insanity, epilepsy, tuberculosis, venereal diseases, asthma, high/low blood pressure).</li>
+            </ol>
+          </li>
+          <li><strong>Section 4 (Misleading Advertisements):</strong> Prohibits advertisements that directly or indirectly give a false impression regarding the true character of a drug, make false claims for the drug, or are otherwise false or misleading in any material particular.</li>
+          <li><strong>Section 5 (Magic Remedies):</strong> Prohibits any person carrying on or purporting to carry on the profession of administering magic remedies from publishing any advertisement referring to any magic remedy for the diseases listed in Section 3.</li>
+        </ul>
+
+        <h4>4. Classes of Exempted Advertisements (Section 14 & Rules)</h4>
+        <ul>
+          <li>Any signboard or notice displayed by a <strong>Registered Medical Practitioner</strong> on his premises indicating that treatment for any disease/disorder specified in Section 3 is undertaken there.</li>
+          <li>Any treatise or book dealing with any matter relating to Section 3 diseases from a <strong>bona fide scientific or social standpoint</strong>.</li>
+          <li>Any advertisement relating to a drug sent <strong>confidentially</strong> in the prescribed manner to a Registered Medical Practitioner (bearing the words <em>"For the use only of registered medical practitioners or a hospital or a laboratory"</em>).</li>
+          <li>Any advertisement relating to a drug printed or published by the <strong>Government</strong>, or by any person with the <strong>previous sanction of the Government</strong>.</li>
+          <li>Labels or leaflets enclosed inside the retail package of a drug containing information required under the Drugs and Cosmetics Act, 1940.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RQ 4 -->
+    <div class="qa-card priority-high" data-part="Part B Part C Part A" data-act="PCA Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Direct & Conceptual Repeat (6 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Oct-19 (10M), Apr-21 (5M), Sep-22 (2M), Nov-22 (2M & 5M), 61/V S/121 (10M), 61/V S/122 (5M)</span>
+          <div class="qa-title">Q4. What is CPCSEA? Explain the Prevention of Cruelty to Animals Act, 1960 with emphasis on guidelines for breeding/experimentation on animals and functions of the Institutional Animal Ethics Committee (IAEC).</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> "Define CPCSEA. Explain their guidelines in the performance of animal experiments and animal breeding" (61/V S/121, 10M) • "Give a brief account how cruelty to animals is checked in India emphasize in context to experimental animals in laboratory. Write the functions of IAEC" (Nov-22, 5M) • "Explain prevention of cruelty animals act, 1960" (Oct-19, 10M). | <strong>PCI Syllabus: Unit IV</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 10-Mark Exam Answer</span>
+        <h4>1. Introduction & Objectives of the PCA Act, 1960</h4>
+        <p>The <strong>Prevention of Cruelty to Animals (PCA) Act, 1960</strong> was enacted to prevent the infliction of unnecessary pain or suffering on animals and to amend laws relating to prevention of cruelty to animals. Chapter IV (Sections 14–20) specifically regulates experimentation on animals for the advancement of physiological knowledge and discovery of new drugs.</p>
+
+        <h4>2. CPCSEA (Committee for the Purpose of Control and Supervision of Experiments on Animals)</h4>
+        <p>Constituted by the Central Government under <strong>Section 15</strong> of the PCA Act, 1960 (now officially renamed CCSEA), CPCSEA is the apex statutory body responsible for ensuring that animals are not subjected to unnecessary pain or suffering before, during, or after the performance of experiments on them.</p>
+        <ul>
+          <li><strong>Registration:</strong> Every establishment breeding animals for experiments or conducting animal experiments must register with CPCSEA.</li>
+          <li><strong>Procurement:</strong> Animals must be procured only from CPCSEA-registered breeders; capture from the wild or purchase of stray animals is prohibited.</li>
+        </ul>
+
+        <h4>3. CPCSEA Guidelines for Animal Breeding & Experimentation</h4>
+        <ul>
+          <li><strong>Principle of 4Rs:</strong> Replacement (use of alternatives where possible), Reduction (minimum number of animals for statistically valid results), Refinement (minimizing pain/distress), and Rehabilitation (post-experiment care/rehabilitation of larger animals).</li>
+          <li><strong>Qualification & Supervision:</strong> Experiments must be performed by or under the direct supervision of qualified scientists/veterinarians.</li>
+          <li><strong>Use of Anaesthesia & Analgesia:</strong> Operations likely to cause pain must be performed under appropriate anaesthesia; if pain persists after anaesthesia wears off, the animal must be painlessly euthanized before regaining consciousness.</li>
+          <li><strong>Housing & Husbandry:</strong> Animals must be housed in clean, well-ventilated, temperature- and humidity-controlled animal houses with adequate species-specific cage space, clean drinking water, balanced diet, and veterinary care.</li>
+          <li><strong>Record Keeping:</strong> Detailed records of animal procurement, breeding, experimental protocols, morbidity/mortality, and disposal must be maintained for CPCSEA inspection.</li>
+        </ul>
+
+        <h4>4. Functions of Institutional Animal Ethics Committee (IAEC)</h4>
+        <p>Every registered establishment must constitute an IAEC (comprising biological scientists, a veterinarian, a non-scientific socially aware member, and a CPCSEA nominee):</p>
+        <ul>
+          <li>Review and approve/reject research protocols involving small laboratory animals (rodents, rabbits, guinea pigs) prior to commencement. (Protocols involving large animals like dogs, primates, equines require direct CPCSEA sub-committee approval after IAEC recommendation).</li>
+          <li>Ensure adherence to CPCSEA guidelines, anaesthesia protocols, and humane endpoints.</li>
+          <li>Conduct periodic inspections of the Institutional Animal House facility and verify animal health and stock registers.</li>
+          <li>Suspend or revoke approval of any ongoing experiment if non-compliance or unnecessary animal suffering is observed.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RQ 5 -->
+    <div class="qa-card priority-high" data-part="Part B Part A" data-act="Drugs & Cosmetics Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Direct & Conceptual Repeat (4 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Nov-22 (10M), 61/V S/121 (10M), 61/V S/121-B (10M), Apr-21 (2M), Apr-22 (2M)</span>
+          <div class="qa-title">Q5. Discuss the qualifications, powers, duties, and inspection procedure of a Drug Inspector in a retail pharmacy and manufacturing premises under the Drugs and Cosmetics Act, 1940.</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> "Discuss the functions, duties and procedure of inspection of a retail pharmacy and manufacturing company by Drug Inspector" (Nov-22, 10M) • "Explain in detail qualification, duties and powers of drug inspector" (61/V S/121, 10M) • "What are the duties of drug Inspector?" (Apr-21, 2M). | <strong>PCI Syllabus: Unit II</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 10-Mark Exam Answer</span>
+        <h4>1. Appointment & Qualifications of Drug Inspector (Section 21 & Rule 49)</h4>
+        <p>Appointed by the Central or State Government by notification in the Official Gazette. A person must hold a degree in <strong>Pharmacy or Pharmaceutical Sciences</strong> or Medicine with specialization in Clinical Pharmacology or Microbiology from a recognized university. (For inspecting Schedule C & C1 manufacturing, at least 18 months' experience in manufacture/testing of Schedule C substances or 3 years' inspection experience is required).</p>
+
+        <h4>2. Powers of Drug Inspector (Section 22)</h4>
+        <ul>
+          <li>Inspect any premises wherein any drug or cosmetic is being manufactured, sold, stocked, exhibited, or distributed.</li>
+          <li>Take samples of any drug or cosmetic being manufactured, sold, or in transit.</li>
+          <li>Search any person, vehicle, vessel, or place where he has reason to believe an offence under the Act is being committed.</li>
+          <li>Seize stock of drugs/cosmetics, registers, records, or documents (in Form 16) if contravening the Act, and issue an order in writing (Form 15) directing the person not to dispose of any stock for a period not exceeding 20 days.</li>
+          <li>Examine any record, register, or document and institute prosecutions for breaches of the Act.</li>
+        </ul>
+
+        <h4>3. Duties of Drug Inspector (Rules 51 & 52)</h4>
+        <ul>
+          <li><strong>Inspection of Sale Premises (Rule 51):</strong> Inspect at least <strong>twice a year</strong> all establishments licensed for sale of drugs within his assigned area to verify compliance with licence conditions.</li>
+          <li><strong>Inspection of Manufacturing Premises (Rule 52):</strong> Inspect at least <strong>twice a year</strong> all premises licensed for manufacture of drugs (especially Schedule C, C1, and M compliance) and submit detailed inspection reports to the Controlling Authority.</li>
+          <li>Send samples of suspected drugs to the Government Analyst and investigate written complaints.</li>
+          <li>Maintain a record of all inspections made and actions taken, and make inquiries regarding unlawful sales or spurious drugs.</li>
+        </ul>
+
+        <h4>4. Procedure of Inspection & Sampling (Section 23)</h4>
+        <ol>
+          <li><strong>Entry & Verification:</strong> Present identity card; verify display of valid retail/wholesale/manufacturing licences (Forms 20, 21, 20B, 21B, 25, 28) and presence of a Registered Pharmacist (in retail) or approved Technical Staff (in manufacturing).</li>
+          <li><strong>Premises & Record Audit:</strong> Check storage conditions (cold chain/refrigerator logs for Schedule C/C1), expiry date registers, Schedule H/H1/X registers, purchase invoices, and batch manufacturing/testing records (BMR/BTR) in factories.</li>
+          <li><strong>Sampling Procedure (Section 23):</strong>
+            <ul>
+              <li>Pay the fair price of the sample taken and obtain a written acknowledgement.</li>
+              <li>Intimate the purpose in writing in <strong>Form 17</strong> to the person from whom the sample is taken.</li>
+              <li>Divide the sample into <strong>4 portions</strong> (or <strong>3 portions</strong> if taken from a manufacturing premises) in the presence of the person, effectively seal and mark each portion, and allow the person to add his own seal/mark.</li>
+              <li><strong>Distribution of Portions:</strong> (i) One portion handed over to the person from whom it was taken; (ii) One portion sent to the <strong>Government Analyst</strong> (with Memorandum in Form 18); (iii) One portion retained for production in Court if required; (iv) Fourth portion (for retail/sale samples) sent to the warrantor/manufacturer whose name appears on the label.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- RQ 6 -->
+    <div class="qa-card priority-high" data-part="Part B Part C Part A" data-act="Drugs & Cosmetics Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Direct & Conceptual Repeat (4 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Oct-19 (10M), Apr-21 (2M), 61/V S/121 (5M), 61/V S/122 (5M)</span>
+          <div class="qa-title">Q6. Describe in detail Schedule M (Good Manufacturing Practices) under the Drugs and Cosmetics Rules, 1945.</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> "Describe in detail schedule M" (Oct-19, 10M) • "Describe the good manufacturing practices to be followed as per Schedule M specified under the Drugs and Cosmetics Act 1940" (61/V S/122, 5M) • "Explain the Schedule G and M" (61/V S/121, 5M) • "Explain schedule M" (Apr-21, 2M). | <strong>PCI Syllabus: Unit I/II</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 10-Mark Exam Answer</span>
+        <h4>1. Introduction to Schedule M</h4>
+        <p><strong>Schedule M</strong> of the Drugs and Cosmetics Rules, 1945 prescribes the <strong>Good Manufacturing Practices (GMP)</strong> and requirements of factory premises, plant, and equipment for the manufacture of pharmaceutical products in India. It ensures that products are consistently produced and controlled to quality standards appropriate to their intended use.</p>
+
+        <h4>2. Structure of Schedule M</h4>
+        <ul>
+          <li><strong>Part I:</strong> Good Manufacturing Practices for Premises and Materials (General requirements + Specific requirements for Sterile Products, Oral Solid Dosage Forms, Oral Liquids, Topical Products, Metered-Dose Inhalers, and APIs).</li>
+          <li><strong>Part II:</strong> Requirements of Plant and Equipment for various dosage forms.</li>
+        </ul>
+
+        <h4>3. Key Components of GMP under Schedule M</h4>
+        <ul>
+          <li><strong>Location & Surroundings:</strong> Factory must be situated away from open sewage, drains, public lavatories, or factories emitting obnoxious fumes, smoke, or excessive dust.</li>
+          <li><strong>Buildings & Premises:</strong> Designed to prevent cross-contamination, mix-ups, and entry of insects/rodents. Walls, floors, and ceilings must be smooth, impervious, washable, and free from cracks. Separate dedicated areas for receiving, quarantine, sampling, storage, manufacturing, packaging, and Quality Control.</li>
+          <li><strong>Water System & HVAC:</strong> Validated purified water and Water for Injection (WFI) systems; dedicated Heating, Ventilation, and Air Conditioning (HVAC) with HEPA filters and pressure differentials for sterile/penicillin/cephalosporin areas.</li>
+          <li><strong>Warehousing & Raw Material Control:</strong> Quarantine area for untested raw materials; approved storage with temperature/humidity monitoring; FIFO (First-In, First-Out) and FEFO (First-Expiry, First-Out) inventory rotation.</li>
+          <li><strong>Sanitation & Hygiene:</strong> Medical examination of personnel, clean protective garments, hand-washing facilities, and prohibition of eating, drinking, or smoking in production areas.</li>
+          <li><strong>Quality Control (QC) & Quality Assurance (QA):</strong> Independent QC laboratory equipped for chemical, microbiological, and instrumental testing; batch release only after QA approval; retention of reference samples.</li>
+          <li><strong>Documentation & Validation:</strong> Master Formula Records (MFR), Batch Manufacturing Records (BMR), Standard Operating Procedures (SOPs), and process/equipment validation logs preserved for at least 1 year after batch expiry (or 3 years, whichever is longer).</li>
+          <li><strong>Self-Inspection & Product Recall:</strong> Periodic internal GMP audits and a documented system for rapid recall of defective batches from the market.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RQ 7 -->
+    <div class="qa-card priority-high" data-part="Part C Part A" data-act="Ethics & History" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Direct Repeat (4 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Nov-22 (5M), 61/V S/122 (5M), 61/V S/122-B (5M), Apr-21 (2M & 5M)</span>
+          <div class="qa-title">Q7. Describe the Code of Pharmaceutical Ethics framed by the Pharmacy Council of India (and Pharmacist's Oath).</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> "Describe code of pharmaceutical ethics" (Nov-22, 5M; 61/V S/122, 5M) • "Explain the code of Ethics in profession of pharmacist" (Apr-21, 2M) • "Explain about Pharmacist oath" (Apr-21, 5M). | <strong>PCI Syllabus: Unit V</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5-Mark Exam Answer</span>
+        <h4>1. Introduction</h4>
+        <p>The <strong>Code of Pharmaceutical Ethics</strong> is formulated by the <strong>Pharmacy Council of India (PCI)</strong> to guide pharmacists in their professional duties toward the public, medical profession, and fellow pharmacists, ensuring high moral and professional standards beyond minimum statutory laws.</p>
+
+        <h4>2. Four Pillars of the Code of Pharmaceutical Ethics</h4>
+        <ul>
+          <li><strong>A. Pharmacist in Relation to His Job:</strong>
+            <ul>
+              <li><em>Scope of Pharmaceutical Service:</em> Provide comprehensive, uninterrupted, and prompt pharmaceutical care without undue delay.</li>
+              <li><em>Conduct of the Pharmacy:</em> Maintain the pharmacy cleanly and systematically to prevent accidental contamination or dispensing errors.</li>
+              <li><em>Handling of Prescriptions:</em> Dispense prescriptions strictly as written without altering ingredients/strengths unless consulted with the prescriber; never disclose patient diagnosis/prescription details publicly.</li>
+              <li><em>Handling of Drugs:</em> Always supply drugs of standard quality; never stock or dispense spurious, adulterated, or expired drugs.</li>
+              <li><em>Apprentice Pharmacists:</em> Impart genuine practical training to student apprentices without issuing false certificates.</li>
+            </ul>
+          </li>
+          <li><strong>B. Pharmacist in Relation to His Trade:</strong>
+            <ul>
+              <li><em>Price Structure:</em> Charge fair prices to customers without overcharging or exploiting emergencies.</li>
+              <li><em>Fair Trade Practices:</em> Avoid cut-throat competition, imitating competitors' labels/trademarks, or offering secret commissions/rebates to doctors.</li>
+              <li><em>Advertising & Displays:</em> Avoid self-laudatory, misleading, or undignified advertisements.</li>
+            </ul>
+          </li>
+          <li><strong>C. Pharmacist in Relation to the Medical Profession:</strong>
+            <ul>
+              <li><em>Limitation of Professional Activity:</em> Never diagnose diseases or prescribe medicines (except minor first-aid in emergencies).</li>
+              <li><em>Clandestine Arrangements:</em> Do not enter into secret profit-sharing agreements with physicians.</li>
+              <li><em>Liaison with Public:</em> Act as a vital link between physicians and the public; never criticize a physician's prescription in front of a patient.</li>
+            </ul>
+          </li>
+          <li><strong>D. Pharmacist in Relation to His Profession:</strong>
+            <ul>
+              <li>Uphold the honour and dignity of the pharmacy profession, support professional organizations, and continuously update scientific knowledge.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RQ 8 -->
+    <div class="qa-card priority-high" data-part="Part B Part C Part A" data-act="NDPS Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Conceptual Repeat (5 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Oct-19 (10M & 2M), Apr-21 (5M), Apr-22 (10M & 2M), Nov-22 (10M & 2M), 61/V S/121 (5M), 61/V S/122 (5M)</span>
+          <div class="qa-title">Q8. Differentiate between Narcotic Drugs and Psychotropic Substances. Discuss the provisions for Opium cultivation/control, Import & Export, and the Narcotic Drugs and Psychotropic Substances Consultative Committee under the NDPS Act, 1985.</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> "Differentiate between Narcotic drugs and Psychotropic substances. Discuss and write the provision for import and export of narcotic drugs and psychotropic substances as per NDPS Act" (Nov-22, 10M) • "Define 'Opium Derivatives' and 'Coca derivatives' under the NDPS Act. Write the constitution and functions of the Narcotic and Psychotropic consultative committee" (Apr-22, 10M) • "Explain in detail narcotic drugs and psychotropic substances act, 1985" (Oct-19, 10M). | <strong>PCI Syllabus: Unit IV</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 10-Mark Exam Answer</span>
+        <h4>1. Differences Between Narcotic Drugs and Psychotropic Substances (NDPS Act, 1985)</h4>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Parameter</th>
+                <th>Narcotic Drugs (Section 2(xiv))</th>
+                <th>Psychotropic Substances (Section 2(xxiii))</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Origin / Nature</strong></td>
+                <td>Primarily natural plant-derived substances (and their semi-synthetic derivatives) obtained from Opium poppy, Coca leaf, and Cannabis (hemp).</td>
+                <td>Natural or synthetic chemical substances specified in the <strong>Schedule</strong> to the NDPS Act (or added by Central Govt. notification).</td>
+              </tr>
+              <tr>
+                <td><strong>Pharmacological Action</strong></td>
+                <td>Produce analgesia (pain relief), stupor, sleep, and severe physical + psychological dependence.</td>
+                <td>Alter mood, perception, consciousness, or behaviour (CNS stimulants, depressants, hallucinogens).</td>
+              </tr>
+              <tr>
+                <td><strong>Examples</strong></td>
+                <td>Opium, Morphine, Heroin (diacetylmorphine), Codeine, Cocaine, Charas, Ganja, Pethidine.</td>
+                <td>Diazepam, Alprazolam, Phenobarbital, Pentazocine, Amphetamine, LSD, MDMA.</td>
+              </tr>
+              <tr>
+                <td><strong>Cultivation Control</strong></td>
+                <td>Cultivation of opium poppy, coca plant, and cannabis is strictly prohibited except under Central/State Government licence.</td>
+                <td>Manufactured synthetically in licensed pharmaceutical facilities; no agricultural cultivation involved.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>2. Special Provisions for Opium (Sections 8, 9 & 19)</h4>
+        <ul>
+          <li><strong>Prohibition & Licensing (Section 8 & 9):</strong> Cultivation of opium poppy is strictly prohibited except on account of the Central Government under a licence issued by the District Opium Officer.</li>
+          <li><strong>Mandatory Delivery:</strong> All opium produced by licensed cultivators must be weighed, tested, and delivered exclusively to the Government Opium Factory (Ghazipur or Neemuch) at prices fixed by the Central Government.</li>
+          <li><strong>Embezzlement Penalty (Section 19):</strong> Any licensed cultivator who illegally disposes of or embezzles opium faces rigorous imprisonment of <strong>10 to 20 years</strong> and a fine of <strong>₹1 lakh to ₹2 lakhs</strong>.</li>
+        </ul>
+
+        <h4>3. Import and Export Provisions (Sections 23 & 24)</h4>
+        <ul>
+          <li><strong>General Prohibition:</strong> Import into India, export out of India, or transhipment of any narcotic drug or psychotropic substance is prohibited except under a valid <strong>Import Certificate / Export Authorization</strong> issued by the Narcotics Commissioner (Central Bureau of Narcotics) strictly for medical and scientific purposes.</li>
+          <li><strong>Conditions for Import/Export:</strong>
+            <ul>
+              <li>Import into India is permitted only after the importer obtains an Import Certificate from the Narcotics Commissioner, which is forwarded to the exporting country's authority.</li>
+              <li>Export from India is permitted only on production of a valid Import Certificate issued by the competent authority of the importing country.</li>
+              <li>Entry and exit are restricted to designated customs ports/airports (e.g., Mumbai, Kolkata, Chennai, Delhi).</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>4. Narcotic Drugs & Psychotropic Substances Consultative Committee (Section 6)</h4>
+        <ul>
+          <li><strong>Constitution:</strong> Constituted by the Central Government to advise it on matters relating to the administration of the NDPS Act. It consists of a <strong>Chairman</strong> and not more than <strong>20 members</strong> (representing Central Ministries of Finance, Health, Home Affairs, Social Justice, and medical/scientific experts).</li>
+          <li><strong>Functions:</strong> Advises the Central Government on policy matters, control of illicit traffic, licensing quotas for opium cultivation, addition/deletion of psychotropic substances in the Schedule, and de-addiction/rehabilitation programs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RQ 9 -->
+    <div class="qa-card priority-high" data-part="Part C" data-act="Drugs & Cosmetics Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Direct Repeat (3 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: 61/V S/121 (5M), 61/V S/122 (5M), Apr-21 (5M)</span>
+          <div class="qa-title">Q9. Differentiate between Wholesale and Retail Sale of drugs, and elaborate the licensing provisions and conditions for retail and wholesale drug sales.</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> "Differentiate between wholesale and Retail Sale drugs and provisions of the licensing for these sales activities" (61/V S/121, 5M) • "Elaborate the licensing and provisions for Retail sales and Wholesale drug activities" (61/V S/122, 5M). | <strong>PCI Syllabus: Unit II</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5-Mark Exam Answer</span>
+        <h4>1. Differences Between Wholesale and Retail Sale</h4>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Retail Sale</th>
+                <th>Wholesale Sale</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Definition</strong></td>
+                <td>Sale of drugs directly to the end consumer/patient for personal consumption.</td>
+                <td>Sale of drugs to a person/institution for the purpose of resale, hospital use, or dispensing.</td>
+              </tr>
+              <tr>
+                <td><strong>Licence Forms</strong></td>
+                <td><strong>Form 20</strong> (other than C, C1, X), <strong>Form 21</strong> (C & C1), <strong>Form 20F</strong> (Schedule X).</td>
+                <td><strong>Form 20B</strong> (other than C, C1, X), <strong>Form 21B</strong> (C & C1), <strong>Form 20G</strong> (Schedule X).</td>
+              </tr>
+              <tr>
+                <td><strong>Technical Supervision</strong></td>
+                <td>Must be conducted under the personal supervision of a <strong>Registered Pharmacist</strong>.</td>
+                <td>Must be supervised by a <strong>Competent Person</strong> (Registered Pharmacist, graduate with 1 yr exp., or SSLC with 4 yrs exp.).</td>
+              </tr>
+              <tr>
+                <td><strong>Minimum Area</strong></td>
+                <td>Minimum <strong>10 sq. meters</strong> (15 sq. meters if combined retail + wholesale).</td>
+                <td>Minimum <strong>10 sq. meters</strong> (15 sq. meters if combined).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>2. General Licensing Provisions & Conditions (Rule 65)</h4>
+        <ul>
+          <li><strong>Application:</strong> Made in Form 19 (or 19C for Schedule X) with prescribed fee, floor plan, proof of ownership/tenancy, and qualification certificates of the Registered Pharmacist/Competent Person.</li>
+          <li><strong>Display of Licence:</strong> Licence must be displayed prominently in a part of the premises open to the public.</li>
+          <li><strong>Storage Facilities:</strong> Premises must be clean, well-ventilated, and equipped with a refrigerator/cold storage for biologicals (Schedule C & C1) requiring 2°C–8°C storage.</li>
+          <li><strong>Prescription & Record Maintenance:</strong> Schedule H, H1, and X drugs shall be sold only against a valid prescription of a Registered Medical Practitioner, recorded in a prescription register, and purchase invoices preserved for at least 2 years.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- RQ 10 -->
+    <div class="qa-card priority-high" data-part="Part C Part A" data-act="Drugs & Cosmetics Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-repeated">Conceptual Repeat (4 Appearances)</span>
+          <span class="badge badge-evidence">PYQ Evidence: Apr-21 (2M), Nov-22 (2M × 2), 61/V S/121 (5M × 2), 61/V S/122 (5M)</span>
+          <div class="qa-title">Q10. Explain General Labelling Requirements and Specimen Labels for Drugs and Cosmetics, including special requirements for Ophthalmic and Injectable Preparations.</div>
+          <div class="qa-meta"><strong>Wordings across papers:</strong> "What are general Labeling requirements and Specimen Labels for drugs and cosmetics" (61/V S/121, 5M) • "Write the general labeling and specimen requirement for the Injectable Preparations" (61/V S/122, 5M) • "Write the labeling requirements for ophthalmic preparation" (Nov-22, 2M). | <strong>PCI Syllabus: Unit II</strong></div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5-Mark Exam Answer</span>
+        <h4>1. General Labelling Requirements for Drugs (Rules 96 & 97)</h4>
+        <p>Every drug container must bear a printed label showing clearly:</p>
+        <ul>
+          <li><strong>Name of the Drug:</strong> Proper/generic name printed in as conspicuous a manner as the brand/trade name.</li>
+          <li><strong>Net Contents:</strong> Weight, volume, or number of units in the package.</li>
+          <li><strong>Active Ingredient Composition:</strong> Quantity of each active ingredient per unit dose or per ml.</li>
+          <li><strong>Manufacturer Details:</strong> Name and address of the manufacturer and Manufacturing Licence Number (<code>Mfg. Lic. No.</code>).</li>
+          <li><strong>Batch & Date Details:</strong> Distinctive Batch Number (<code>Batch No.</code>), Date of Manufacture, and Date of Expiry (mandatory for Schedule P & C/C1 drugs).</li>
+          <li><strong>Schedule Warnings (Rule 97):</strong>
+            <ul>
+              <li><em>Schedule G:</em> "Caution: It is dangerous to take this preparation except under medical supervision" (in red box).</li>
+              <li><em>Schedule H:</em> Symbol <strong>Rx</strong> on top left corner + "Schedule H Prescription Drug – Caution: Not to be sold by retail without the prescription of a Registered Medical Practitioner".</li>
+              <li><em>Schedule X:</em> Symbol <strong>NRx</strong> in red on top left corner + special warning box.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>2. Special Labelling for Ophthalmic Preparations (Rule 97 / Schedule F)</h4>
+        <ul>
+          <li>Must bear the warning: <strong>"Use the solution within one month after opening the container"</strong> (for multi-dose eye drops).</li>
+          <li>Must state: <strong>"NOT FOR INJECTION"</strong> and <strong>"FOR EXTERNAL USE ONLY"</strong>.</li>
+          <li>Name and concentration of added antimicrobial preservative, plus storage instructions.</li>
+        </ul>
+
+        <h4>3. Special Labelling for Injectable (Parenteral) Preparations</h4>
+        <ul>
+          <li>Route of administration clearly stated (e.g., <em>"For I.V. use only"</em>, <em>"For I.M. use only"</em>).</li>
+          <li>Statement <strong>"Sterile"</strong> and volume of liquid in container (with overages where applicable).</li>
+          <li>For multi-dose vials: name and percentage of preservative; for single-dose ampoules: <em>"Single dose only – discard unused portion"</em>.</li>
+          <li>Warning: <em>"Do not use if solution is cloudy or contains suspended particulate matter"</em>.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. HIGH-PRIORITY QUESTIONS WITH DETAILED ANSWERS -->
+  <section id="high-priority">
+    <h2 class="section-title">5. High-Priority Questions (Strong Multi-Paper & Syllabus Evidence)</h2>
+
+    <!-- HP 1 -->
+    <div class="qa-card priority-high" data-part="Part C Part A" data-act="Drugs & Cosmetics Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-evidence">PYQ Evidence: Nov-22 (5M), Oct-19 (2M), 61/V S/121-B (5M)</span>
+          <div class="qa-title">Q11. Discuss the procedure and conditions for obtaining a licence to manufacture Schedule X drugs, and state the penalties for non-compliance.</div>
+          <div class="qa-meta">Part C (5 Marks) | Drugs & Cosmetics Act, 1940 & Rules, 1945 | PCI Syllabus: Unit II</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5-Mark Exam Answer</span>
+        <h4>1. What is Schedule X?</h4>
+        <p><strong>Schedule X</strong> under the Drugs and Cosmetics Rules, 1945 lists habit-forming narcotic and psychotropic drugs (such as Amphetamine, Barbiturates, Ketamine, Pentazocine, Secobarbital) requiring strict manufacturing, distribution, and retail controls.</p>
+
+        <h4>2. Procedure for Obtaining Manufacturing Licence (Rules 69 & 75)</h4>
+        <ol>
+          <li><strong>Application:</strong> Submit application to the State Licensing Authority in <strong>Form 24F</strong> (for drugs other than Schedule C & C1) or <strong>Form 27B</strong> (for Schedule C & C1 drugs containing Schedule X), along with the prescribed fee, site master plan, and technical staff qualifications.</li>
+          <li><strong>Inspection:</strong> The Licensing Authority directs a Drug Inspector to inspect the premises to verify Schedule M compliance and high-security storage rooms.</li>
+          <li><strong>Grant of Licence:</strong> Upon satisfactory report, the licence is issued in <strong>Form 25F</strong> or <strong>Form 28B</strong> (valid for 5 years).</li>
+        </ol>
+
+        <h4>3. Special Conditions for Schedule X Manufacture (Rules 71A & 76A)</h4>
+        <ul>
+          <li>Separate, secure, locked storage facilities exclusively for Schedule X raw materials and finished products.</li>
+          <li>Accounts of all transactions (raw material receipt, batch yield, sales) must be maintained in bound, serially numbered registers and preserved for <strong>5 years</strong>.</li>
+          <li>Copies of all sales invoices must be forwarded to the Licensing Authority every <strong>3 months</strong>.</li>
+          <li>Labels must prominently display the symbol <strong>NRx</strong> in red on the top left corner.</li>
+          <li>Sale is permitted only to persons holding a valid Schedule X wholesale/retail licence (Form 20G/20F).</li>
+        </ul>
+
+        <h4>4. Penalties for Non-Compliance</h4>
+        <p>Manufacture or sale of Schedule X drugs without a valid licence or in contravention of licence conditions attracts imprisonment of <strong>not less than 1 to 3 years</strong> (extendable up to 5–10 years for adulterated/spurious categories) and a fine of not less than <strong>₹5,000 to ₹10,000</strong>.</p>
+      </div>
+    </div>
+
+    <!-- HP 2 -->
+    <div class="qa-card priority-high" data-part="Part B Part C Part A" data-act="Drugs & Cosmetics Act" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-evidence">PYQ Evidence: Nov-22 (5M), Apr-21 (5M), Sep-22 (10M), Oct-19 (2M), 61/V S/121 (2M)</span>
+          <div class="qa-title">Q12. Write the constitution and functions of the Drugs Technical Advisory Board (DTAB) and Drugs Consultative Committee (DCC).</div>
+          <div class="qa-meta">Part C (5 Marks) / Part B (10 Marks) | Drugs & Cosmetics Act, 1940 (Sections 5 & 7) | PCI Syllabus: Unit II</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5/10-Mark Exam Answer</span>
+        <h4>1. Drugs Technical Advisory Board (DTAB — Section 5)</h4>
+        <p>DTAB is the highest statutory technical advisory body constituted by the Central Government to advise the Central and State Governments on technical matters arising out of the administration of the Drugs and Cosmetics Act, 1940.</p>
+        <ul>
+          <li><strong>Constitution of DTAB (18 Members):</strong>
+            <ul>
+              <li><em>Ex-Officio Members (8):</em> Director General of Health Services (Chairman), Drugs Controller General of India (Member-Secretary), Director of Central Drugs Laboratory (Kolkata), Director of Central Research Institute (Kasauli), Director of Indian Veterinary Research Institute (Izatnagar), President of Medical Council of India (NMC), President of Pharmacy Council of India, Director of Central Drug Research Institute (Lucknow).</li>
+              <li><em>Nominated Members (5):</em> 2 persons nominated by Central Govt. from among persons in charge of drugs control in States; 1 person from the pharmaceutical industry nominated by Central Govt.; 2 Government Analysts nominated by Central Govt.</li>
+              <li><em>Elected Members (5):</em> 1 teacher in pharmacy/pharmaceutical chemistry/pharmacognosy elected by PCI; 1 teacher in medicine/therapeutics elected by MCI; 1 pharmacologist elected by Governing Body of ICMR; 1 person elected by Council of Indian Pharmaceutical Association (IPA); 1 person elected by Council of Indian Medical Association (IMA).</li>
+            </ul>
+          </li>
+          <li><strong>Functions of DTAB:</strong> Advises Central and State Governments on technical matters, amendments to the Drugs and Cosmetics Rules/Schedules, setting standards for drugs and cosmetics, and framing rules for import, manufacture, and sale.</li>
+        </ul>
+
+        <h4>2. Drugs Consultative Committee (DCC — Section 7)</h4>
+        <ul>
+          <li><strong>Constitution:</strong> Constituted by the Central Government to secure uniformity throughout India in the administration of the Act. It consists of <strong>2 representatives</strong> nominated by the Central Government and <strong>1 representative</strong> nominated by each State Government.</li>
+          <li><strong>Functions:</strong> Advises the Central Government, State Governments, and DTAB on any matter tending to secure uniform enforcement of the Drugs and Cosmetics Act across all States.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HP 3 -->
+    <div class="qa-card priority-high" data-part="Part B Part C Part A" data-act="DPCO" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-evidence">PYQ Evidence: Nov-22 (5M & 2M), Apr-21 (10M), Oct-19 (2M), 61/V S/121 (5M), 61/V S/121-B (2M)</span>
+          <div class="qa-title">Q13. Write the objectives and role of the Drugs (Prices Control) Order (DPCO), 2013 and explain the National List of Essential Medicines (NLEM) along with ceiling/retail price determination.</div>
+          <div class="qa-meta">Part C (5 Marks) / Part B (10 Marks) | Essential Commodities Act, 1955 & DPCO 2013 | PCI Syllabus: Unit V</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5/10-Mark Exam Answer</span>
+        <h4>1. Objectives of Drugs (Prices Control) Order (DPCO), 2013</h4>
+        <p>Issued by the Central Government (administered by the <strong>National Pharmaceutical Pricing Authority — NPPA</strong>) under Section 3 of the Essential Commodities Act, 1955, DPCO aims to:</p>
+        <ul>
+          <li>Ensure equitable distribution and availability of essential medicines at fair, affordable prices to the common man.</li>
+          <li>Prevent unreasonable profiteering and arbitrary price hikes by pharmaceutical manufacturers.</li>
+          <li>Regulate ceiling prices of scheduled formulations listed in the National List of Essential Medicines (NLEM) while encouraging quality production and R&D.</li>
+        </ul>
+
+        <h4>2. National List of Essential Medicines (NLEM)</h4>
+        <p><strong>NLEM</strong> is a list of priority medicines prepared by the Ministry of Health and Family Welfare that satisfy the priority healthcare needs of the majority of the population. Under DPCO 2013, all formulations included in <strong>Schedule I (aligned with NLEM)</strong> are classified as <em>Scheduled Formulations</em> subject to mandatory price ceilings fixed by NPPA.</p>
+
+        <h4>3. Ceiling Price & Retail Price Calculation (DPCO 2013 Market-Based Pricing)</h4>
+        <ul>
+          <li><strong>Ceiling Price Formula:</strong> Calculated as the simple average of Price to Retailer (PTR) of all brands/generics of that medicine having market share &ge; 1%, plus a <strong>16% Retailer Margin</strong>:
+            <br><code>Ceiling Price (P<sub>c</sub>) = P<sub>s</sub> × (1 + M / 100)</code>, where <code>P<sub>s</sub></code> = Average PTR of brands with &ge;1% market share, and <code>M</code> = 16% retailer margin.</li>
+          <li><strong>Maximum Retail Price (MRP):</strong> <code>MRP = Ceiling Price + Local Taxes (GST)</code>.</li>
+          <li><strong>Price to Wholesaler (PTW) & Price to Retailer (PTR):</strong> Under standard trade margins (8% wholesaler margin and 16% retailer margin on scheduled drugs), <code>PTR = Ceiling Price / 1.16</code> and <code>PTW = PTR / 1.08</code> (or <code>PTR - 8%</code> depending on trade slab). <em>(See Section 9 for worked examples of both DPCO 2013 and classical DPCO 1995 MAPE formulas).</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HP 4 -->
+    <div class="qa-card priority-high" data-part="Part B Part C Part A" data-act="Ethics & History" data-priority="high">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-high">High Priority</span>
+          <span class="badge badge-evidence">PYQ Evidence: Nov-22 (5M), Apr-21 (10M), 61/V S/121 (2M)</span>
+          <div class="qa-title">Q14. Trace the origin, background, and historical evolution of Pharmaceutical Legislation in India (including the Chopra Committee / Drugs Enquiry Committee and Bhore Committee).</div>
+          <div class="qa-meta">Part C (5 Marks) / Part B (10 Marks) | PCI Syllabus: Unit I</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5/10-Mark Exam Answer</span>
+        <h4>1. Pre-Independence Status (Early 20th Century)</h4>
+        <ul>
+          <li>Prior to 1940, India had no comprehensive legislation controlling the import, manufacture, or sale of drugs.</li>
+          <li>India became a dumping ground for substandard, adulterated, and spurious foreign drugs rejected in Western markets.</li>
+          <li>Only limited enactments existed: the <strong>Opium Act, 1878</strong>, the <strong>Poisons Act, 1919</strong>, and the <strong>Dangerous Drugs Act, 1930</strong>.</li>
+        </ul>
+
+        <h4>2. Drugs Enquiry Committee (Chopra Committee, 1930–1931)</h4>
+        <ul>
+          <li>Appointed by the Government of India in August 1930 under the chairmanship of <strong>Col. R.N. Chopra</strong> to inquire into the extent of adulteration and impure drugs and recommend legislative control.</li>
+          <li><strong>Key Recommendations (1931):</strong>
+            <ol>
+              <li>Enactment of central legislation to control the import, manufacture, distribution, and sale of drugs.</li>
+              <li>Establishment of a Central Drugs Laboratory with expert staff and Provincial testing laboratories.</li>
+              <li>Formation of a Pharmacy Council and institution of degree/diploma courses in pharmacy to train qualified pharmacists.</li>
+            </ol>
+          </li>
+        </ul>
+
+        <h4>3. Enactment of Foundational Legislation (1937–1948)</h4>
+        <ul>
+          <li><strong>Import of Drugs Bill (1937):</strong> Initially introduced only for imports, later withdrawn to include domestic manufacture and sale.</li>
+          <li><strong>Drugs Act, 1940 & Drugs Rules, 1945:</strong> Enacted on 10th April 1940 (amended later to include Cosmetics in 1962 and Ayurvedic/Unani drugs in 1964).</li>
+          <li><strong>Health Survey and Development Committee (Bhore Committee, 1943–1946):</strong> Recommended strict enforcement of the Drugs Act, strengthening of drug testing laboratories, and statutory regulation of pharmacy education.</li>
+          <li><strong>Pharmacy Act, 1948:</strong> Enacted to regulate pharmacy education and registration of pharmacists across India.</li>
+        </ul>
+
+        <h4>4. Post-Independence Legislative Milestones</h4>
+        <ul>
+          <li><strong>Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954</strong></li>
+          <li><strong>Medicinal and Toilet Preparations (Excise Duties) Act, 1955</strong></li>
+          <li><strong>Prevention of Cruelty to Animals Act, 1960</strong></li>
+          <li><strong>Patents Act, 1970</strong> & <strong>MTP Act, 1971</strong></li>
+          <li><strong>Narcotic Drugs and Psychotropic Substances (NDPS) Act, 1985</strong></li>
+          <li><strong>Drugs (Prices Control) Order (DPCO), 2013</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. IMPORTANT AND BACKUP QUESTIONS WITH ANSWERS -->
+  <section id="important-backup">
+    <h2 class="section-title">6. Important & Backup Questions (2M, 5M & 10M Coverage)</h2>
+
+    <!-- IMP 1 -->
+    <div class="qa-card priority-important" data-part="Part B Part C" data-act="Drugs & Cosmetics Act" data-priority="important">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-important">Important</span>
+          <span class="badge badge-evidence">PYQ Evidence: Apr-21 (5M), 61/V S/121 (10M & 5M)</span>
+          <div class="qa-title">Q15. Explain the prohibition of import, manufacture, and sale of certain drugs and cosmetics, along with offences and penalties under the Drugs and Cosmetics Act, 1940.</div>
+          <div class="qa-meta">Part B (10 Marks) / Part C (5 Marks) | Sections 10, 13, 18, 27 | PCI Syllabus: Unit I/II</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5/10-Mark Exam Answer</span>
+        <h4>1. Prohibition of Import (Section 10)</h4>
+        <p>No person shall import into India:</p>
+        <ul>
+          <li>Any drug or cosmetic which is not of standard quality.</li>
+          <li>Any misbranded, adulterated, or spurious drug or misbranded/spurious cosmetic.</li>
+          <li>Any drug or cosmetic for the import of which a licence is prescribed, otherwise than under and in accordance with such licence.</li>
+          <li>Any patent or proprietary medicine unless its true formula or list of active ingredients is displayed on the label.</li>
+          <li>Any drug claiming to prevent or cure any disease/ailment specified in <strong>Schedule J</strong>.</li>
+        </ul>
+
+        <h4>2. Prohibition of Manufacture and Sale (Section 18)</h4>
+        <p>No person shall manufacture for sale or distribution, sell, stock, exhibit, or distribute:</p>
+        <ul>
+          <li>Any drug or cosmetic not of standard quality, or misbranded, adulterated, or spurious.</li>
+          <li>Any drug or cosmetic without a valid licence issued for that purpose.</li>
+          <li>Any drug or cosmetic in contravention of any provision of Chapter IV or Rules made thereunder.</li>
+          <li>Any drug containing banned ingredients or fixed-dose combinations prohibited by the Central Government under Section 26A.</li>
+        </ul>
+
+        <h4>3. Offences and Penalties (Section 13 for Import; Section 27 for Manufacture/Sale)</h4>
+        <ul>
+          <li><strong>Adulterated or Spurious Drugs causing death or grievous hurt (Sec 27(a)):</strong> Imprisonment for <strong>not less than 10 years, extendable to imprisonment for life</strong>, and fine of not less than <strong>₹10 lakhs</strong> (or 3 times the value of confiscated drugs, whichever is more).</li>
+          <li><strong>Spurious Drugs not causing death/grievous hurt (Sec 27(c)):</strong> Imprisonment of <strong>7 to 10 years</strong> and fine of not less than <strong>₹3 lakhs</strong>.</li>
+          <li><strong>Manufacture/Sale without valid licence (Sec 27(b)(ii)):</strong> Imprisonment of <strong>3 to 5 years</strong> and fine of not less than <strong>₹1 lakh</strong>.</li>
+          <li><strong>Not of Standard Quality Drugs (Sec 27(d)):</strong> Imprisonment of <strong>1 to 2 years</strong> and fine of not less than <strong>₹20,000</strong>.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- IMP 2 -->
+    <div class="qa-card priority-important" data-part="Part C Part A" data-act="Drugs & Cosmetics Act" data-priority="important">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-important">Important</span>
+          <span class="badge badge-evidence">PYQ Evidence: Nov-22 (2M), 61/V S/121 (5M), 61/V S/121-B (5M), 61/V S/121 (2M)</span>
+          <div class="qa-title">Q16. Write a note on the Central Drugs Laboratory (CDL / Drug Control Laboratory) and the duties of a Government Analyst.</div>
+          <div class="qa-meta">Part C (5 Marks) / Part A (2 Marks) | Sections 6 & 20, Rule 46 | PCI Syllabus: Unit II</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5-Mark Exam Answer</span>
+        <h4>1. Central Drugs Laboratory (CDL — Section 6)</h4>
+        <p>Established by the Central Government in <strong>Kolkata</strong> (with statutory functions for specific sera/vaccines delegated to CRI Kasauli, IVRI Izatnagar, and NIB Noida), CDL acts as the apex national statutory appellate testing laboratory under the Drugs and Cosmetics Act, 1940.</p>
+        <ul>
+          <li><strong>Functions of CDL:</strong>
+            <ol>
+              <li>Analyse or test samples of imported drugs sent by Customs Collectors.</li>
+              <li>Act as an <strong>appellate authority</strong> in legal disputes when a manufacturer/accused challenges a Government Analyst's test report (the CDL report is conclusive evidence of facts).</li>
+              <li>Carry out specialized testing of biologicals, vaccines, sera, and contraceptives as entrusted by the Central Government.</li>
+            </ol>
+          </li>
+        </ul>
+
+        <h4>2. Duties of Government Analyst (Section 20 & Rule 46)</h4>
+        <ul>
+          <li>Analyse or test samples of drugs and cosmetics sent by Drug Inspectors (under Section 23) or purchasers (under Section 26) according to pharmacopoeial standards.</li>
+          <li>Submit a signed report of the test/analysis in triplicate in <strong>Form 13</strong> to the Drug Inspector.</li>
+          <li>Forward reports on research work and drug quality trends to the Central/State Government for publication.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- IMP 3 -->
+    <div class="qa-card priority-important" data-part="Part C Part A" data-act="Ethics & History" data-priority="important">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-important">Important</span>
+          <span class="badge badge-evidence">PYQ Evidence: Apr-21 (5M), 61/V S/121 (2M), 61/V S/121-B (5M)</span>
+          <div class="qa-title">Q17. What is the Right to Information (RTI) Act, 2005? Mention its salient features, procedure to obtain information, and exemptions.</div>
+          <div class="qa-meta">Part C (5 Marks) / Part A (2 Marks) | Right to Information Act, 2005 | PCI Syllabus: Unit V</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5-Mark Exam Answer</span>
+        <h4>1. Introduction & Objectives</h4>
+        <p>The <strong>Right to Information (RTI) Act, 2005</strong> empowers every citizen of India to seek information from public authorities, thereby promoting transparency and accountability in the working of every government department, regulatory body (such as CDSCO, PCI, NPPA), and public institution.</p>
+
+        <h4>2. Salient Features & Procedure</h4>
+        <ul>
+          <li><strong>Public Information Officers (PIO):</strong> Every public authority must designate Central/State Public Information Officers (CPIO/SPIO) and Assistant PIOs to receive and process applications.</li>
+          <li><strong>Application & Fee:</strong> Any citizen can apply in writing or electronically in English, Hindi, or the official regional language with a nominal fee (₹10; waived for Below Poverty Line applicants). No reason for seeking information needs to be stated.</li>
+          <li><strong>Time Limits:</strong>
+            <ul>
+              <li>Normal cases: Information must be provided within <strong>30 days</strong> of receipt.</li>
+              <li>Life or liberty of a person: Within <strong>48 hours</strong>.</li>
+              <li>Third-party information: Within <strong>40 days</strong>.</li>
+            </ul>
+          </li>
+          <li><strong>Appellate Mechanism:</strong> First appeal lies with the First Appellate Authority (senior officer) within 30 days; second appeal lies with the Central/State Information Commission within 90 days.</li>
+          <li><strong>Exemptions (Section 8):</strong> Information affecting national sovereignty/security, cabinet papers, trade secrets/intellectual property, personal privacy, or information forbidden by a court is exempt from disclosure.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- IMP 4 -->
+    <div class="qa-card priority-important" data-part="Part C Part A" data-act="Ethics & History" data-priority="important">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-important">Important</span>
+          <span class="badge badge-evidence">PYQ Evidence: Apr-21 (2M), Apr-22 (2M), Sep-22 (2M), 61/V S/121 (5M × 2), 61/V S/121-B (2M)</span>
+          <div class="qa-title">Q18. Define Intellectual Property Rights (IPR) and Patent. Explain the basic criteria for patentability and the procedure for obtaining a patent in India.</div>
+          <div class="qa-meta">Part C (5 Marks) / Part A (2 Marks) | The Patents Act, 1970 (as amended in 2005) | PCI Syllabus: Unit V</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 5-Mark Exam Answer</span>
+        <h4>1. Definitions</h4>
+        <ul>
+          <li><strong>Intellectual Property Rights (IPR):</strong> Legal rights granted to creators/inventors over creations of the human mind (inventions, literary/artistic works, symbols, designs) for a limited period. Main types include <strong>Patents, Trademarks, Copyrights, Industrial Designs, and Geographical Indications</strong>.</li>
+          <li><strong>Patent:</strong> An exclusive statutory right granted by the Government to an inventor (or assignee) for a term of <strong>20 years</strong> (from the date of filing) to exclude others from making, using, selling, or importing the patented invention without consent.</li>
+        </ul>
+
+        <h4>2. Three Basic Criteria for Patentability</h4>
+        <ol>
+          <li><strong>Novelty (Newness):</strong> The invention must not be anticipated by any prior publication or public use anywhere in the world before the filing date.</li>
+          <li><strong>Inventive Step (Non-obviousness):</strong> It must involve a technical advance or economic significance that is not obvious to a person skilled in the art.</li>
+          <li><strong>Industrial Applicability:</strong> The invention must be capable of being made or used in an industry.</li>
+        </ol>
+
+        <h4>3. Procedure for Obtaining a Patent (Patents Act, 1970)</h4>
+        <ol>
+          <li><strong>Filing of Application:</strong> File Provisional or Complete Specification (Form 1 & Form 2) at the Indian Patent Office.</li>
+          <li><strong>Publication:</strong> Application is published in the Official Patent Journal after <strong>18 months</strong> from the filing/priority date.</li>
+          <li><strong>Request for Examination (RFE):</strong> Applicant files RFE (Form 18) within 48 months; Patent Examiner issues First Examination Report (FER).</li>
+          <li><strong>Pre-Grant Opposition & Grant:</strong> After resolving objections and any pre-grant opposition, the patent is granted and sealed for 20 years (subject to annual renewal fees).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- BACKUP 1 -->
+    <div class="qa-card priority-backup" data-part="Part B" data-act="Ethics & History" data-priority="backup">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-backup">Backup Topic</span>
+          <span class="badge badge-evidence">PYQ Evidence: 61/V S/121-B (Part B, 10M)</span>
+          <div class="qa-title">Q19. Explain the salient features, conditions, and regulatory provisions of the Medical Termination of Pregnancy (MTP) Act, 1971 (and Rules).</div>
+          <div class="qa-meta">Part B (10 Marks) | Medical Termination of Pregnancy Act, 1971 | PCI Syllabus: Unit V</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Model 10-Mark Exam Answer</span>
+        <h4>1. Objective of the MTP Act, 1971</h4>
+        <p>Enacted to provide for the termination of certain pregnancies by Registered Medical Practitioners (RMPs) on humanitarian, eugenic, therapeutic, and social grounds, thereby reducing maternal mortality caused by unsafe, illegal abortions.</p>
+
+        <h4>2. Grounds for Termination of Pregnancy (Section 3)</h4>
+        <ul>
+          <li><strong>Therapeutic Ground:</strong> Continuation of pregnancy would involve a risk to the life of the pregnant woman or grave injury to her physical or mental health.</li>
+          <li><strong>Eugenic Ground:</strong> Substantial risk that if the child were born, it would suffer from serious physical or mental abnormalities as to be seriously handicapped.</li>
+          <li><strong>Humanitarian Ground:</strong> Pregnancy caused by rape (presumed to constitute grave injury to mental health).</li>
+          <li><strong>Social / Contraceptive Failure Ground:</strong> Failure of any device or method used by a married woman or her husband (updated to any woman or her partner under the 2021 Amendment) for limiting the number of children.</li>
+        </ul>
+
+        <h4>3. Gestational Limits & Medical Opinion Requirements</h4>
+        <ul>
+          <li><strong>Up to 12 weeks (20 weeks under 2021 Amendment):</strong> Opinion of <strong>one</strong> Registered Medical Practitioner formed in good faith.</li>
+          <li><strong>12 to 20 weeks (20 to 24 weeks under 2021 Amendment for special categories):</strong> Opinion of <strong>two</strong> Registered Medical Practitioners formed in good faith.</li>
+          <li><strong>Emergency Exception (Section 5):</strong> Gestational limits and second-opinion rules do not apply where an RMP forms an opinion in good faith that termination is immediately necessary to save the life of the pregnant woman.</li>
+        </ul>
+
+        <h4>4. Consent & Approved Place (Sections 3(4) & 4)</h4>
+        <ul>
+          <li><strong>Consent:</strong> Written consent of the pregnant woman is mandatory (if she is under 18 years of age or mentally ill, written consent of her guardian is required).</li>
+          <li><strong>Approved Place:</strong> Must be performed only at a hospital established/maintained by the Government or a place approved for the purpose by the Government/District Level Committee.</li>
+          <li><strong>Confidentiality:</strong> All admission registers and records are strictly confidential and cannot be disclosed except to authorized authorities.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- BACKUP 2 (Consolidated 2-Mark Quick Bank from all PYQs) -->
+    <div class="qa-card priority-backup" data-part="Part A" data-act="Drugs & Cosmetics Act" data-priority="backup">
+      <div class="qa-header" onclick="toggleCard(this)">
+        <div>
+          <span class="badge badge-backup">Part A 2-Mark Bank</span>
+          <span class="badge badge-evidence">PYQ Evidence: Oct-19, Apr-21, Apr-22, Sep-22, Nov-22</span>
+          <div class="qa-title">Q20. Consolidated Part-A (2-Mark) Definitions & Short Notes Across All Uploaded Papers (20 High-Yield Items)</div>
+          <div class="qa-meta">Part A (2 Marks each) | Multi-Act Coverage | PCI Syllabus: Units I–V</div>
+        </div>
+        <span class="toggle-icon">View Answer ▼</span>
+      </div>
+      <div class="qa-body">
+        <span class="answer-label">Complete 2-Mark Answers</span>
+        <ol>
+          <li><strong>Pharmacy vs. Drug Store vs. Chemist (Nov-22):</strong>
+            <ul>
+              <li><em>Pharmacy:</em> Premises where drugs are compounded, dispensed, and sold under the personal supervision of a Registered Pharmacist.</li>
+              <li><em>Drug Store:</em> Premises licensed to sell drugs by retail where compounding of prescriptions is <em>not</em> carried out, though a Registered Pharmacist is required for Schedule H/H1/X retail sales.</li>
+              <li><em>Chemist (and Druggist):</em> Premises licensed for retail sale of drugs and chemicals, employing a Registered Pharmacist for dispensing prescriptions.</li>
+            </ul>
+          </li>
+          <li><strong>Schedule F & Schedule F1 (Nov-22):</strong> Prescribe standards for the operation of blood banks, collection/storage of whole human blood, and production/testing of bacterial and viral vaccines, sera, and diagnostic antigens under the D&C Rules, 1945.</li>
+          <li><strong>Schedule G (Sep-22):</strong> Lists drugs (e.g., Metformin, Glibenclamide, Bleomycin, Cisplatin) to be taken only under medical supervision, carrying the red-boxed warning: <em>"Caution: It is dangerous to take this preparation except under medical supervision."</em></li>
+          <li><strong>Schedule H (Apr-22):</strong> Lists prescription drugs (e.g., antibiotics, antihypertensives) bearing the symbol <strong>Rx</strong> that cannot be sold by retail except against the prescription of a Registered Medical Practitioner.</li>
+          <li><strong>Schedule N (61/V S/121-B):</strong> Prescribes the list of minimum equipment (balances, mortars, pestles, dispensing bottles, refrigerator, reference books) required for the efficient running of a pharmacy.</li>
+          <li><strong>Schedule Y (61/V S/121-B):</strong> Lays down requirements and guidelines for permission to import and/or manufacture new drugs for sale or to undertake clinical trials in India (Phases I–IV, responsibilities of Sponsor and Principal Investigator).</li>
+          <li><strong>Spurious Drug (Oct-19, Nov-22 — Sec 17B, D&C Act):</strong> A drug is deemed spurious if it is imported/manufactured under a name belonging to another drug, is an imitation/substitute of another drug, bears a fictitious manufacturer's name, or purports to be the product of a manufacturer of whom it is not truly a product.</li>
+          <li><strong>Misbranded & Adulterated Drugs (Sep-22, 61/V S/121-B):</strong> <em>Misbranded (Sec 17):</em> Coloured/coated to conceal damage, improperly labelled, or bearing false claims. <em>Adulterated (Sec 17A):</em> Contains filthy/putrid/decomposed substance, prepared under insanitary conditions, or packed in a poisonous container.</li>
+          <li><strong>Loan Licence (Apr-22, Sep-22, 61/V S/121-B):</strong> A licence (Form 25A / 28A) granted to an applicant who does not possess his own manufacturing premises/plant but avails himself of the manufacturing facilities owned by another licensee.</li>
+          <li><strong>Repacking Licence (Oct-19, Sep-22, 61/V S/121):</strong> A licence (Form 25B) granted to break up drugs (other than Schedule C & C1) from bulk containers into smaller retail packages and label them for distribution.</li>
+          <li><strong>Denatured Spirit (Oct-19):</strong> Ethyl alcohol rendered unfit for human consumption (potable use) by the addition of prescribed denaturants such as wood naphtha (methanol), pyridine, or caoutchoucine.</li>
+          <li><strong>Toilet Preparation (61/V S/121-B — M&TP Act, 1955):</strong> Any preparation intended for use in the toilet of the human body or in perfuming apparel of any description, or any substance intended to cleanse, improve, or alter the complexion, skin, hair, or teeth (including deodorants and perfumes).</li>
+          <li><strong>Four Key Functions of CDSCO (Apr-22):</strong> (i) Approval of New Drugs and Clinical Trials; (ii) Control over quality of imported drugs; (iii) Coordination of activities of State Drugs Control Organizations; (iv) Acting as the Central Licensing Approving Authority (CLAA) for blood banks, large-volume parenterals, and vaccines.</li>
+          <li><strong>Essential Qualification of Registered Pharmacist (Sep-22 — Sec 31/32, Pharmacy Act):</strong> Minimum pass in Diploma in Pharmacy (D.Pharm) or Degree in Pharmacy (B.Pharm) from an institution approved by PCI, plus completion of prescribed practical training (500 hours) and residence/business in the State.</li>
+          <li><strong>Punishment for Falsely Claiming to be a Registered Pharmacist (61/V S/122 — Sec 41, Pharmacy Act):</strong> Fine up to <strong>₹500</strong> on first conviction, and imprisonment up to <strong>6 months</strong> or fine up to <strong>₹1,000</strong> or both on any subsequent conviction.</li>
+          <li><strong>Four Examples of Psychotropic Substances (Apr-22):</strong> Diazepam, Alprazolam, Phenobarbital, Pentazocine (also Amphetamine, Lorazepam, Ketamine).</li>
+          <li><strong>Opium & Coca Derivatives (Apr-22, 61/V S/121 — NDPS Act):</strong> <em>Opium derivatives:</em> Medicinal opium, prepared opium, phenanthrene alkaloids (morphine, codeine, thebaine) and their salts, and diacetylmorphine (heroin). <em>Coca derivatives:</em> Crude cocaine, ecgonine, cocaine, and preparations containing more than 0.1% cocaine.</li>
+          <li><strong>Two Examples of Permitted Colours under D&C Rules (Apr-22 — Rule 127):</strong> Natural colours: Chlorophyll, Annatto, Caramel, Riboflavin; Coal-tar dyes: Tartrazine, Sunset Yellow FCF, Amaranth, Erythrosine.</li>
+          <li><strong>Drug Abuse (Apr-21):</strong> Habitual, non-medical, or excessive self-administration of psychoactive, narcotic, or prescription drugs leading to physical/psychological dependence, tolerance, and social/physiological harm.</li>
+          <li><strong>SWOT Analysis of Pharma Sector (Sep-22):</strong> Strategic evaluation tool assessing <strong>S</strong>trengths (cost-effective generic manufacturing, skilled workforce), <strong>W</strong>eaknesses (API import dependency, low R&D spend), <strong>O</strong>pportunities (biosimilars, global generic exports), and <strong>T</strong>hreats (stringent USFDA/EMA audits, DPCO price caps).</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. ACT-WISE AND UNIT-WISE TOPIC ANALYSIS -->
+  <section id="act-unit-analysis">
+    <h2 class="section-title">7. Act-Wise & Standard PCI Unit-Wise Topic Analysis</h2>
+    <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1rem;"><em>Note: Unit numbers correspond to the standard PCI B.Pharm V Semester (BP 505T) Syllabus since a separate university syllabus PDF was not attached.</em></p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>PCI Unit & Legislation</th>
+            <th>Topics Tested in Uploaded PYQs</th>
+            <th>Key Authorities, Forms & Schedules</th>
+            <th>Syllabus Topics Not Yet Heavily Tested (Watchlist)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Unit I: Drugs & Cosmetics Act, 1940 & Rules, 1945 (Part 1)</strong></td>
+            <td>Definitions (Spurious, Adulterated, Misbranded), Schedule M (GMP), Schedule F, G, H, N, X, Y, Prohibition of Import & Manufacture/Sale, Offences & Penalties, Loan & Repacking Licences.</td>
+            <td>CDSCO, CLAA, Schedules C, C1, F, G, H, H1, J, M, N, P, X, Y; Forms 20, 21, 24F, 25, 25A, 25B, 28.</td>
+            <td>Import of drugs for personal use (Form 12A/12B), Test & Analysis import licence (Form 11), Schedule C & C1 biological manufacturing conditions.</td>
+          </tr>
+          <tr>
+            <td><strong>Unit II: Drugs & Cosmetics Act, 1940 & Rules, 1945 (Part 2)</strong></td>
+            <td>DTAB, Drugs Consultative Committee (DCC), Central Drugs Laboratory (CDL), Government Analyst duties, Drug Inspector (qualifications, powers, duties, sampling), Retail & Wholesale Sale licensing, General/Ophthalmic/Injectable/Cosmetic labelling, Permitted colours.</td>
+            <td>DTAB (Sec 5), DCC (Sec 7), CDL (Sec 6), Forms 13, 15, 16, 17, 18, 19, 20, 20B, 21, 21B; Rule 96, 97, 127.</td>
+            <td>Ayurvedic, Siddha & Unani (ASU) drugs provisions (Chapter IVA, DTAB for ASU, Schedule T).</td>
+          </tr>
+          <tr>
+            <td><strong>Unit III: Pharmacy Act, 1948</strong></td>
+            <td>Objectives, PCI (Central Council) constitution & functions, State & Joint State Pharmacy Councils, Registration procedure, Removal of names from register, Offences & penalties (false claim).</td>
+            <td>PCI (Sec 3), Education Regulations (Sec 10), State Council (Sec 19), Joint Council (Sec 20), Central Register (Sec 15A), Sec 41 & 42 penalties.</td>
+            <td>Detailed inspection procedure of pharmacy colleges by PCI Inspectors (Section 16) and withdrawal of approval (Section 13).</td>
+          </tr>
+          <tr>
+            <td><strong>Unit IV: M&TP Act 1955, NDPS Act 1985, DMR Act 1954 & PCA Act 1960</strong></td>
+            <td><strong>M&TP Act:</strong> Bonded vs. Non-bonded manufacture, Toilet preparation, Denatured spirit.<br><strong>NDPS Act:</strong> Narcotic vs. Psychotropic, Opium/Coca derivatives, Import/Export, Consultative Committee, National Fund.<br><strong>DMR Act:</strong> Magic remedy, Prohibited & Exempted ads.<br><strong>PCA Act:</strong> CPCSEA & IAEC guidelines.</td>
+            <td>Excise Commissioner, Narcotics Commissioner, NDPS Consultative Committee (Sec 6), National Fund (Sec 7A), CPCSEA (Sec 15), IAEC.</td>
+            <td>Warehousing of alcoholic preparations under M&TP Act; Illicit traffic forfeiture provisions under NDPS Act.</td>
+          </tr>
+          <tr>
+            <td><strong>Unit V: Pharmaceutical Ethics, History, DPCO, MTP Act, RTI Act & IPR</strong></td>
+            <td>Code of Pharmaceutical Ethics, Pharmacist Oath, Origin/History (Chopra & Bhore Committees), DPCO 2013 & NLEM, Retail/Ceiling price, MTP Act 1971, RTI Act 2005, Patents Act 1970 & IPR.</td>
+            <td>NPPA, NLEM, Essential Commodities Act 1955, CPIO/SPIO (RTI), Indian Patent Office, RMP (MTP Act).</td>
+            <td>Detailed calculation of Retail Price using MAPE formula (DPCO 1995 vs 2013), Trademarks & Copyright distinctions.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 8. FREQUENCY TABLE -->
+  <section id="frequency-table">
+    <h2 class="section-title">8. Cross-Paper Frequency & Evidence Matrix</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Act / Topic / Concept</th>
+            <th>Appearances in Corpus</th>
+            <th>Papers / Years</th>
+            <th>Marks & Part</th>
+            <th>Priority</th>
+            <th>Evidence Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Pharmacy Act, 1948 (PCI, State/Joint Councils, Registration)</strong></td>
+            <td><strong>8</strong></td>
+            <td>Oct-19, Apr-21, Apr-22, Sep-22, Nov-22, 61/V S/121, 61/V S/121-B, 61/V S/122</td>
+            <td>2M (A), 5M (C), 10M (B)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Appears in virtually every single paper in Part B or Part C.</td>
+          </tr>
+          <tr>
+            <td><strong>NDPS Act, 1985 (Opium, Narcotic vs Psychotropic, Import/Export, Committee)</strong></td>
+            <td><strong>7</strong></td>
+            <td>Oct-19, Apr-21, Apr-22, Nov-22, 61/V S/121, 61/V S/121-B, 61/V S/122</td>
+            <td>2M (A), 5M (C), 10M (B)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Tested across all three parts; high weightage in Part B (10M).</td>
+          </tr>
+          <tr>
+            <td><strong>PCA Act, 1960 (CPCSEA & IAEC Guidelines)</strong></td>
+            <td><strong>6</strong></td>
+            <td>Oct-19, Apr-21, Sep-22, Nov-22, 61/V S/121, 61/V S/122</td>
+            <td>2M (A), 5M (C), 10M (B)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Consistent repeat in Part C (5M) and Part B (10M).</td>
+          </tr>
+          <tr>
+            <td><strong>Drugs & Magic Remedies Act, 1954 (Magic Remedy, Prohibited & Exempted Ads)</strong></td>
+            <td><strong>6</strong></td>
+            <td>Oct-19, Apr-21, Sep-22, Nov-22, 61/V S/121-B, 61/V S/122</td>
+            <td>2M (A), 5M (C), 10M (B)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Direct verbatim repeats across Sep-22, Nov-22, and 61/V S/122.</td>
+          </tr>
+          <tr>
+            <td><strong>Medicinal & Toilet Prep. Act, 1955 (Bonded & Non-Bonded Lab)</strong></td>
+            <td><strong>5</strong></td>
+            <td>Oct-19, Apr-21, Apr-22, Sep-22, Nov-22, 61/V S/122</td>
+            <td>2M (A), 5M (C), 10M (B)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Direct verbatim 10M/5M question in Apr-22, Sep-22, Nov-22.</td>
+          </tr>
+          <tr>
+            <td><strong>Drug Inspector (Qualifications, Powers, Duties, Inspection Procedure)</strong></td>
+            <td><strong>5</strong></td>
+            <td>Apr-21, Apr-22, Nov-22, 61/V S/121, 61/V S/121-B</td>
+            <td>2M (A), 10M (B)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Major 10M Part B question in Nov-22 & 61/V S/121-B.</td>
+          </tr>
+          <tr>
+            <td><strong>Schedules of D&C Rules (M, X, F, G, H, N, Y)</strong></td>
+            <td><strong>6</strong></td>
+            <td>Oct-19, Apr-21, Apr-22, Sep-22, Nov-22, 61/V S/121-B</td>
+            <td>2M (A), 5M (C), 10M (B)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Schedule M (GMP) & Schedule X appear repeatedly as 5M/10M.</td>
+          </tr>
+          <tr>
+            <td><strong>Code of Pharmaceutical Ethics & Pharmacist Oath</strong></td>
+            <td><strong>4</strong></td>
+            <td>Apr-21, Nov-22, 61/V S/122</td>
+            <td>2M (A), 5M (C)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Direct 5M question in Part C across multiple papers.</td>
+          </tr>
+          <tr>
+            <td><strong>Labelling Requirements (General, Ophthalmic, Injectable, Cosmetics)</strong></td>
+            <td><strong>4</strong></td>
+            <td>Apr-21, Nov-22, 61/V S/121, 61/V S/122</td>
+            <td>2M (A), 5M (C)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Tested both as 2M (Ophthalmic) and 5M (General/Injectable).</td>
+          </tr>
+          <tr>
+            <td><strong>DPCO & NLEM (Objectives, Retail/Ceiling Price)</strong></td>
+            <td><strong>4</strong></td>
+            <td>Oct-19, Apr-21, Nov-22, 61/V S/121</td>
+            <td>2M (A), 5M (C), 10M (B)</td>
+            <td><span class="badge badge-high">High</span></td>
+            <td>Tested in Nov-22 (5M + 2M) and Apr-21 (10M).</td>
+          </tr>
+          <tr>
+            <td><strong>DTAB & Drugs Consultative Committee (DCC)</strong></td>
+            <td><strong>4</strong></td>
+            <td>Oct-19, Apr-21, Sep-22, Nov-22</td>
+            <td>2M (A), 5M (C), 10M (B)</td>
+            <td><span class="badge badge-important">Important</span></td>
+            <td>DTAB featured in Sep-22 (10M) and Nov-22 (5M).</td>
+          </tr>
+          <tr>
+            <td><strong>Retail & Wholesale Drug Sale Licensing</strong></td>
+            <td><strong>3</strong></td>
+            <td>61/V S/121 (2M & 5M), 61/V S/122 (5M)</td>
+            <td>2M (A), 5M (C)</td>
+            <td><span class="badge badge-important">Important</span></td>
+            <td>Core Part C 5M topic on licensing differences and conditions.</td>
+          </tr>
+          <tr>
+            <td><strong>IPR & Patents Act, 1970</strong></td>
+            <td><strong>4</strong></td>
+            <td>Apr-21, Apr-22, Sep-22, 61/V S/121 (5M), 61/V S/121-B (2M)</td>
+            <td>2M (A), 5M (C)</td>
+            <td><span class="badge badge-important">Important</span></td>
+            <td>Frequent 2M definitions + occasional 5M procedure question.</td>
+          </tr>
+          <tr>
+            <td><strong>Right to Information (RTI) Act, 2005</strong></td>
+            <td><strong>3</strong></td>
+            <td>Apr-21 (5M), 61/V S/121 (2M), 61/V S/121-B (5M)</td>
+            <td>2M (A), 5M (C)</td>
+            <td><span class="badge badge-important">Important</span></td>
+            <td>Standard 5M short note in Part C.</td>
+          </tr>
+          <tr>
+            <td><strong>Origin/History of Pharmacy Legislation (Chopra & Bhore Committees)</strong></td>
+            <td><strong>2</strong></td>
+            <td>Apr-21 (10M), Nov-22 (5M)</td>
+            <td>5M (C), 10M (B)</td>
+            <td><span class="badge badge-important">Important</span></td>
+            <td>Tested in Nov-22 Part C (5M) and Apr-21 Part B (10M).</td>
+          </tr>
+          <tr>
+            <td><strong>Medical Termination of Pregnancy (MTP) Act, 1971</strong></td>
+            <td><strong>1</strong></td>
+            <td>61/V S/121-B (10M)</td>
+            <td>10M (B)</td>
+            <td><span class="badge badge-backup">Backup</span></td>
+            <td>Appeared once in Part B; good backup topic from Unit V.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 9. IMPORTANT SUPPORTED CALCULATIONS / PROCEDURES -->
+  <section id="procedures-formulas">
+    <h2 class="section-title">9. Key Legal Procedures & DPCO Price Calculation Formulas</h2>
+    <div class="card">
+      <h3>A. DPCO Formulation Price Calculations (Relevant to Nov-22 Part C Q3(g))</h3>
+      <p style="font-size:0.9rem; margin-top:0.4rem;"><em>Additional Legal Verification Note:</em> In Indian B.Pharm exams, questions asking <em>"How are the prices of formulations to the wholesale and retailer calculated?"</em> are answered using either the current <strong>DPCO 2013 Market-Based Pricing</strong> trade-margin structure or the classical <strong>DPCO 1995 Cost-Based (MAPE)</strong> formula taught in standard textbooks (Kuchekar / Mithal). Presenting both ensures full marks:</p>
+      
+      <h4 style="margin-top:0.85rem; color:var(--primary);">1. Current DPCO 2013 Framework (NPPA Market-Based Ceiling Price)</h4>
+      <ul style="margin-left:1.35rem; font-size:0.9rem; margin-top:0.35rem;">
+        <li><strong>Step 1 — Average Price to Retailer (P<sub>s</sub>):</strong> Simple average of Price to Retailer (PTR) of all brands/generics of the scheduled formulation having a market share of <strong>1% or more</strong> of total market turnover.</li>
+        <li><strong>Step 2 — Ceiling Price (P<sub>c</sub>):</strong> Add <strong>16% Retailer Margin</strong> to P<sub>s</sub>:
+          <br><code>P<sub>c</sub> = P<sub>s</sub> × (1 + 16/100) = 1.16 × P<sub>s</sub></code></li>
+        <li><strong>Step 3 — Maximum Retail Price (MRP):</strong> <code>MRP = P<sub>c</sub> + Applicable Local Taxes (GST)</code>.</li>
+        <li><strong>Step 4 — Price to Retailer (PTR) & Price to Wholesaler (PTW):</strong>
+          <br><code>PTR = P<sub>c</sub> / 1.16</code> (or <code>MRP excluding GST − 16% margin</code>)
+          <br><code>PTW = PTR × (1 − 0.08)</code> (allowing standard <strong>8% Wholesaler Margin</strong> on PTR).</li>
+      </ul>
+
+      <h4 style="margin-top:0.85rem; color:var(--primary);">2. Classical DPCO Formula (Cost-Based MAPE Formula — Taught in Standard Textbooks)</h4>
+      <p style="font-size:0.9rem; margin-top:0.25rem;"><code>RP = (MC + CC + PM + PC) × (1 + MAPE / 100) + ED</code></p>
+      <ul style="margin-left:1.35rem; font-size:0.88rem; margin-top:0.25rem;">
+        <li><strong>RP:</strong> Retail Price | <strong>MC:</strong> Material Cost | <strong>CC:</strong> Conversion Cost | <strong>PM:</strong> Cost of Packing Material | <strong>PC:</strong> Packing Charges | <strong>MAPE:</strong> Maximum Allowable Post-Manufacturing Expenses (100% for indigenously manufactured scheduled formulations) | <strong>ED:</strong> Excise Duty / GST.</li>
+        <li><strong>Worked Example:</strong> Suppose <code>(MC + CC + PM + PC) = ₹40</code>, <code>MAPE = 100%</code>, and <code>Tax/ED = ₹5</code>:
+          <br><code>Retail Price (RP) = 40 × (1 + 100/100) + 5 = 40 × 2 + 5 = ₹85.00</code>.
+          <br>Allowing 16% retailer margin on pre-tax price (₹80): <code>Price to Retailer (PTR) = 80 − (16% of 80) = ₹67.20</code>.
+          <br>Allowing 8% wholesaler margin: <code>Price to Wholesaler (PTW) = 67.20 − (8% of 67.20) = ₹61.82</code>.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>B. Chronological Flowchart: Pharmacist Registration (Pharmacy Act, 1948 — Sec 32–34)</h3>
+      <ol style="margin-left:1.35rem; font-size:0.9rem; margin-top:0.4rem;">
+        <li><strong>Application:</strong> Candidate possessing approved D.Pharm/B.Pharm degree + 500 hrs practical training applies in prescribed form to the <strong>Registrar of the State Pharmacy Council</strong> with fee, age proof (≥18 yrs), residence/business proof, and original certificates.</li>
+        <li><strong>Scrutiny by Registrar:</strong> Registrar verifies authenticity of qualifications from PCI-approved institution and checks character/conviction records.</li>
+        <li><strong>Entry in State Register:</strong> If satisfied, the Registrar enters the applicant's name, residential address, date of admission, and qualifications in the <strong>State Register of Pharmacists</strong>.</li>
+        <li><strong>Issue of Registration Certificate:</strong> Registrar issues a formal Certificate of Registration (valid for display at the pharmacy). (If rejected, applicant may appeal to the State Pharmacy Council within 3 months).</li>
+        <li><strong>Annual Renewal & Central Register:</strong> Renewed annually upon payment of retention fee; copies of the State Register are forwarded to PCI for entry into the <strong>Central Register of Pharmacists</strong>.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 10. PREDICTED 75-MARK QUESTION PAPER -->
+  <section id="predicted-paper">
+    <h2 class="section-title">10. Predicted 75-Mark Semester Question Paper (GITAM Pattern)</h2>
+    <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1rem;"><strong>Prediction Basis:</strong> Constructed strictly on the verified 75-mark GITAM BP 505T pattern (10×2 + 2×10 + 7×5) by synthesizing high-recurrence concepts across Oct-19, Apr-21, Apr-22, Sep-22, Nov-22, and 61/V S/121–122 without verbatim copying.</p>
+
+    <div class="exam-paper">
+      <div class="exam-header">
+        <p style="font-size:0.85rem; font-weight:600;">MODEL PREDICTED EXAMINATION PAPER — BASED ON MULTI-YEAR PYQ TRENDS</p>
+        <h2>B. Pharmacy Degree Examination — V Semester</h2>
+        <p style="font-weight:700; margin-top:0.2rem;">PHARMACEUTICAL JURISPRUDENCE [BP 505T]</p>
+        <div class="exam-meta-row">
+          <span>Time: 3 Hours</span>
+          <span>Max. Marks: 75</span>
+        </div>
+        <p style="font-size:0.82rem; margin-top:0.5rem; text-align:left;"><strong>Instructions:</strong> Part A is compulsory; answer all questions in Part A. Answer any two questions from Part B and any seven questions from Part C.</p>
+      </div>
+
+      <!-- PART A -->
+      <div class="exam-part">
+        <div class="exam-part-title">
+          <span>PART – A (Answer all questions)</span>
+          <span>(10 × 2 = 20 Marks)</span>
+        </div>
+        <div class="exam-q"><strong>1. a)</strong> Define <em>Loan Licence</em> and <em>Repacking Licence</em> under the Drugs and Cosmetics Rules, 1945. <span class="evidence-note">Evidence: Appeared in Oct-19, Apr-22, Sep-22, 61/V S/121.</span></div>
+        <div class="exam-q"><strong>1. b)</strong> Differentiate between <em>Adulterated Drug</em> and <em>Misbranded Drug</em> under the Drugs and Cosmetics Act, 1940. <span class="evidence-note">Evidence: Appeared in Sep-22, Nov-22 (Spurious), 61/V S/121-B.</span></div>
+        <div class="exam-q"><strong>1. c)</strong> Mention the significance of <em>Schedule G</em> and <em>Schedule H</em> under the Drugs and Cosmetics Rules, 1945. <span class="evidence-note">Evidence: Appeared in Apr-22, Sep-22, Nov-22, 61/V S/121.</span></div>
+        <div class="exam-q"><strong>1. d)</strong> What are the four primary functions of the Central Drugs Standard Control Organization (CDSCO)? <span class="evidence-note">Evidence: Appeared in Apr-22 (Part A).</span></div>
+        <div class="exam-q"><strong>1. e)</strong> State the penalties provided under the Pharmacy Act, 1948 for falsely claiming to be a Registered Pharmacist. <span class="evidence-note">Evidence: Appeared in 61/V S/122 (Part C) & Apr-22 (Removal of name).</span></div>
+        <div class="exam-q"><strong>1. f)</strong> Define <em>Magic Remedy</em> as per the Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954. <span class="evidence-note">Evidence: Appeared in Oct-19, Sep-22, Nov-22.</span></div>
+        <div class="exam-q"><strong>1. g)</strong> What is <em>Denatured Spirit</em>? Define <em>Toilet Preparation</em> under the M&TP Act, 1955. <span class="evidence-note">Evidence: Appeared in Oct-19 & 61/V S/121-B.</span></div>
+        <div class="exam-q"><strong>1. h)</strong> Give four examples of Psychotropic Substances controlled under the NDPS Act, 1985. <span class="evidence-note">Evidence: Appeared in Apr-22 (Part A).</span></div>
+        <div class="exam-q"><strong>1. i)</strong> State the three basic criteria for patentability under the Indian Patents Act, 1970. <span class="evidence-note">Evidence: Appeared in Sep-22, Apr-22, 61/V S/121-B.</span></div>
+        <div class="exam-q"><strong>1. j)</strong> What is the <em>National List of Essential Medicines (NLEM)</em> and how does it relate to DPCO, 2013? <span class="evidence-note">Evidence: Appeared in Nov-22 (Part A) & Apr-21 (Part B).</span></div>
+      </div>
+
+      <!-- PART B -->
+      <div class="exam-part">
+        <div class="exam-part-title">
+          <span>PART – B (Answer any two questions)</span>
+          <span>(2 × 10 = 20 Marks)</span>
+        </div>
+        <div class="exam-q"><strong>2. a)</strong> Describe the constitution, powers, and functions of the <em>Pharmacy Council of India (PCI)</em> and <em>State Pharmacy Councils</em> under the Pharmacy Act, 1948. <span class="evidence-note">Evidence: Highest-frequency Part B topic across Apr-21, Apr-22, Sep-22, Nov-22.</span></div>
+        <div class="exam-q"><strong>2. b)</strong> Explain the qualifications, powers, duties, and step-by-step inspection and sampling procedure of a <em>Drug Inspector</em> in manufacturing and retail sale premises. <span class="evidence-note">Evidence: Major Part B question in Nov-22 & 61/V S/121-B.</span></div>
+        <div class="exam-q"><strong>2. c)</strong> State the objectives of the <em>Medicinal and Toilet Preparations (Excise Duties) Act, 1955</em> and compare the procedure for manufacture of alcoholic preparations in <em>Bonded</em> and <em>Non-Bonded</em> laboratories. <span class="evidence-note">Evidence: Repeated 4 times in Part B/C across Apr-22, Sep-22, Nov-22, 61/V S/122.</span></div>
+      </div>
+
+      <!-- PART C -->
+      <div class="exam-part">
+        <div class="exam-part-title">
+          <span>PART – C (Answer any seven questions)</span>
+          <span>(7 × 5 = 35 Marks)</span>
+        </div>
+        <div class="exam-q"><strong>3. a)</strong> Summarize the Good Manufacturing Practices (GMP) requirements for premises, sanitation, and quality control as per <em>Schedule M</em>. <span class="evidence-note">Evidence: Appeared in Oct-19 (10M), Apr-21 (2M), 61/V S/121 (5M), 61/V S/122 (5M).</span></div>
+        <div class="exam-q"><strong>3. b)</strong> Write the constitution and functions of the <em>Drugs Technical Advisory Board (DTAB)</em> under the Drugs and Cosmetics Act, 1940. <span class="evidence-note">Evidence: Appeared in Sep-22 (10M), Nov-22 (5M), Apr-21 (5M).</span></div>
+        <div class="exam-q"><strong>3. c)</strong> Differentiate between wholesale and retail sale of drugs and outline the licensing conditions for retail pharmacies. <span class="evidence-note">Evidence: Appeared in 61/V S/121 (5M) & 61/V S/122 (5M).</span></div>
+        <div class="exam-q"><strong>3. d)</strong> Explain the general labelling requirements for drugs and special labelling provisions for <em>ophthalmic</em> and <em>parenteral</em> preparations. <span class="evidence-note">Evidence: Appeared in Nov-22 (2M), 61/V S/121 (5M), 61/V S/122 (5M).</span></div>
+        <div class="exam-q"><strong>3. e)</strong> Explain the role of <em>CPCSEA</em> and the functions of the <em>Institutional Animal Ethics Committee (IAEC)</em> under the Prevention of Cruelty to Animals Act, 1960. <span class="evidence-note">Evidence: Appeared in 6 papers across Part A, B, and C.</span></div>
+        <div class="exam-q"><strong>3. f)</strong> Enumerate the classes of <em>prohibited</em> and <em>exempted</em> advertisements under the Drugs and Magic Remedies (Objectionable Advertisements) Act, 1954. <span class="evidence-note">Evidence: Appeared in Sep-22, Nov-22, 61/V S/121, 61/V S/122.</span></div>
+        <div class="exam-q"><strong>3. g)</strong> Differentiate between <em>Narcotic Drugs</em> and <em>Psychotropic Substances</em> and explain the import/export controls under the NDPS Act, 1985. <span class="evidence-note">Evidence: Appeared in Nov-22 (10M), Oct-19 (10M), Apr-22 (10M).</span></div>
+        <div class="exam-q"><strong>3. h)</strong> Describe the <em>Code of Pharmaceutical Ethics</em> in relation to the pharmacist's job, trade, and medical profession. <span class="evidence-note">Evidence: Appeared in Nov-22 (5M), 61/V S/122 (5M), Apr-21 (2M & 5M).</span></div>
+        <div class="exam-q"><strong>3. i)</strong> Explain the salient features, time limits, and exemptions under the <em>Right to Information (RTI) Act, 2005</em>. <span class="evidence-note">Evidence: Appeared in Apr-21 (5M), 61/V S/121 (2M), 61/V S/121-B (5M).</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. COMPLETE ANSWER KEY FOR EVERY PREDICTED QUESTION -->
+  <section id="answer-key">
+    <h2 class="section-title">11. Complete Answer Key for Predicted Paper (All Questions Solved)</h2>
+    <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:1rem;">Every question in Part A (1a–1j), Part B (2a–2c), and Part C (3a–3i) is mapped below with complete, exam-ready answers (including optional questions).</p>
+
+    <div class="card">
+      <h3>Part A — Complete Solutions (10 × 2 = 20 Marks)</h3>
+      <ol style="margin-left:1.35rem; font-size:0.9rem; margin-top:0.5rem;">
+        <li style="margin-bottom:0.5rem;"><strong>1. a) Loan Licence & Repacking Licence:</strong> <em>Loan Licence (Rule 69A/75A):</em> Granted to an applicant who does not own manufacturing facilities but utilizes the spare manufacturing capacity of another licensed manufacturer (Form 25A/28A). <em>Repacking Licence (Rule 69B):</em> Granted to break up drugs (excluding Schedule C & C1) from bulk containers into smaller retail packs and label them for distribution (Form 25B).</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. b) Adulterated vs. Misbranded Drug:</strong> <em>Adulterated Drug (Sec 17A):</em> Consists wholly/partly of filthy, putrid, or decomposed substance, is prepared/stored under insanitary conditions, or is packed in a container composed of poisonous substances. <em>Misbranded Drug (Sec 17):</em> Coloured, coated, powdered, or polished so that damage is concealed, not labelled in the prescribed manner, or bears false/misleading claims.</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. c) Schedule G & Schedule H:</strong> <em>Schedule G:</em> Drugs to be taken strictly under medical supervision (must carry red-boxed caution on label). <em>Schedule H:</em> Prescription-only drugs bearing symbol <strong>Rx</strong> that cannot be sold by retail without a valid prescription from a Registered Medical Practitioner.</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. d) Four Functions of CDSCO:</strong> (1) Approval of New Drugs and Clinical Trials; (2) Regulatory control over quality of imported drugs; (3) Acting as Central Licensing Approving Authority (CLAA) for blood banks, vaccines, and LVPs; (4) Coordinating uniform enforcement with State Drugs Control Authorities.</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. e) Penalty for Falsely Claiming to be a Registered Pharmacist (Sec 41, Pharmacy Act, 1948):</strong> Fine up to <strong>₹500</strong> on first conviction, and imprisonment up to <strong>6 months</strong> or fine up to <strong>₹1,000</strong> or both on subsequent conviction.</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. f) Magic Remedy (Sec 2(c), DMR Act, 1954):</strong> Includes a talisman, mantra, kavacha, and any other charm alleged to possess miraculous powers for diagnosis, cure, mitigation, treatment, or prevention of any disease in humans or animals, or for influencing bodily structure/functions.</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. g) Denatured Spirit & Toilet Preparation:</strong> <em>Denatured Spirit:</em> Ethyl alcohol rendered unfit for human consumption by adding prescribed denaturants (e.g., methanol, pyridine). <em>Toilet Preparation (Sec 2(k), M&TP Act, 1955):</em> Any preparation intended for use in the toilet of the human body or perfuming apparel, or to cleanse, improve, or alter the complexion, skin, hair, or teeth.</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. h) Four Psychotropic Substances (NDPS Act, 1985):</strong> Diazepam, Alprazolam, Phenobarbital, Pentazocine (also Lorazepam, Amphetamine).</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. i) Three Criteria for Patentability (Patents Act, 1970):</strong> (1) <em>Novelty</em> (new worldwide); (2) <em>Inventive Step</em> (non-obvious technical advance); (3) <em>Industrial Applicability</em> (capable of manufacture/use in industry).</li>
+        <li style="margin-bottom:0.5rem;"><strong>1. j) NLEM & DPCO, 2013:</strong> <em>NLEM</em> is the National List of Essential Medicines prepared by the Ministry of Health covering priority healthcare drugs. All medicines listed in NLEM form <strong>Schedule I of DPCO, 2013</strong>, whose ceiling prices are strictly regulated by NPPA.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>Part B — Complete Solutions Cross-Reference (3 × 10 = 30 Marks; Attempt any 2)</h3>
+      <ul style="margin-left:1.35rem; font-size:0.92rem; margin-top:0.5rem;">
+        <li style="margin-bottom:0.6rem;"><strong>2. a) PCI & State Pharmacy Councils:</strong> Complete model answer provided in <strong>Section 4, Q1</strong> (cover Objectives of Pharmacy Act 1948, PCI Constitution under Sec 3 [Elected, Nominated, Ex-Officio], PCI Functions under Sec 10/12/15A, and State/Joint State Council constitution & functions under Sec 19/20).</li>
+        <li style="margin-bottom:0.6rem;"><strong>2. b) Drug Inspector Powers, Duties & Inspection Procedure:</strong> Complete model answer provided in <strong>Section 4, Q5</strong> (cover Qualifications under Rule 49, Powers under Sec 22, Duties under Rules 51 & 52, and 4-portion/3-portion Sampling Procedure under Sec 23 using Forms 17 & 18).</li>
+        <li style="margin-bottom:0.6rem;"><strong>2. c) M&TP Act, 1955 — Bonded & Non-Bonded Manufacture:</strong> Complete model answer provided in <strong>Section 4, Q2</strong> (cover Objectives, Bonded Manufactory premises/locks/requisition/clearance, Non-Bonded Manufactory advance duty payment/registers, and comparison table).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Part C — Complete Solutions Cross-Reference (9 × 5 = 45 Marks; Attempt any 7)</h3>
+      <ul style="margin-left:1.35rem; font-size:0.92rem; margin-top:0.5rem;">
+        <li style="margin-bottom:0.45rem;"><strong>3. a) Schedule M (GMP):</strong> Solved in full in <strong>Section 4, Q6</strong> (cover Location, Premises, HVAC/Water systems, Warehousing, Sanitation, QC/QA, and BMR/SOP documentation).</li>
+        <li style="margin-bottom:0.45rem;"><strong>3. b) Constitution & Functions of DTAB:</strong> Solved in full in <strong>Section 5, Q12</strong> (cover 18-member constitution: 8 Ex-officio, 5 Nominated, 5 Elected, plus technical advisory functions under Sec 5).</li>
+        <li style="margin-bottom:0.45rem;"><strong>3. c) Wholesale vs. Retail Sale Licensing:</strong> Solved in full in <strong>Section 4, Q9</strong> (cover comparison table of Forms 20/21 vs 20B/21B, Registered Pharmacist vs Competent Person, area requirements, and Rule 65 conditions).</li>
+        <li style="margin-bottom:0.45rem;"><strong>3. d) General, Ophthalmic & Parenteral Labelling:</strong> Solved in full in <strong>Section 4, Q10</strong> (cover Rules 96 & 97 general details, Schedule warnings, 1-month ophthalmic rule, and sterile route/particulate warnings for injectables).</li>
+        <li style="margin-bottom:0.45rem;"><strong>3. e) CPCSEA & IAEC Functions:</strong> Solved in full in <strong>Section 4, Q4</strong> (cover Sec 15 CPCSEA registration, 4Rs principle, anaesthesia/housing rules, and IAEC protocol review/inspection functions).</li>
+        <li style="margin-bottom:0.45rem;"><strong>3. f) Prohibited & Exempted Advertisements (DMR Act, 1954):</strong> Solved in full in <strong>Section 4, Q3</strong> (cover Sections 3, 4, 5 prohibitions and Section 14 exemptions).</li>
+        <li style="margin-bottom:0.45rem;"><strong>3. g) Narcotic vs. Psychotropic & Import/Export (NDPS Act, 1985):</strong> Solved in full in <strong>Section 4, Q8</strong> (cover comparison table + Sections 23 & 24 Import Certificate / Export Authorization rules).</li>
+        <li style="margin-bottom:0.45rem;"><strong>3. h) Code of Pharmaceutical Ethics:</strong> Solved in full in <strong>Section 4, Q7</strong> (cover PCI Code across Job, Trade, Medical Profession, and Pharmacy Profession).</li>
+        <li style="margin-bottom:0.45rem;"><strong>3. i) Right to Information (RTI) Act, 2005:</strong> Solved in full in <strong>Section 5, Q17</strong> (cover CPIO/SPIO, ₹10 application, 30-day / 48-hour timelines, appeals, and Section 8 exemptions).</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  function toggleCard(headerEl) {
+    const card = headerEl.parentElement;
+    card.classList.toggle('open');
+    const icon = headerEl.querySelector('.toggle-icon');
+    if (icon) {
+      icon.textContent = card.classList.contains('open') ? 'Hide Answer ▲' : 'View Answer ▼';
+    }
+  }
+
+  function toggleAllAnswers(expand) {
+    const cards = document.querySelectorAll('.qa-card');
+    cards.forEach(card => {
+      if (expand) {
+        card.classList.add('open');
+        const icon = card.querySelector('.toggle-icon');
+        if (icon) icon.textContent = 'Hide Answer ▲';
+      } else {
+        card.classList.remove('open');
+        const icon = card.querySelector('.toggle-icon');
+        if (icon) icon.textContent = 'View Answer ▼';
+      }
+    });
+  }
+
+  const searchInput = document.getElementById('searchInput');
+  const partFilter = document.getElementById('partFilter');
+  const actFilter = document.getElementById('actFilter');
+  const priorityFilter = document.getElementById('priorityFilter');
+
+  function filterCards() {
+    const query = searchInput.value.toLowerCase().trim();
+    const partVal = partFilter.value;
+    const actVal = actFilter.value;
+    const priorityVal = priorityFilter.value;
+
+    const cards = document.querySelectorAll('.qa-card');
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      const cardPart = card.getAttribute('data-part') || '';
+      const cardAct = card.getAttribute('data-act') || '';
+      const cardPriority = card.getAttribute('data-priority') || '';
+
+      const matchesSearch = !query || text.includes(query);
+      const matchesPart = partVal === 'all' || cardPart.includes(partVal);
+      const matchesAct = actVal === 'all' || cardAct === actVal;
+      const matchesPriority = priorityVal === 'all' || cardPriority === priorityVal;
+
+      if (matchesSearch && matchesPart && matchesAct && matchesPriority) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  searchInput.addEventListener('input', filterCards);
+  partFilter.addEventListener('change', filterCards);
+  actFilter.addEventListener('change', filterCards);
+  priorityFilter.addEventListener('change', filterCards);
+</script>
+</body>
+</html>
